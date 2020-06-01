@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introduction}{1}%
+\contentsline {section}{\numberline {2}Device requirements for neuromorphic systems}{1}%
+\contentsline {section}{\numberline {3}Light Sources}{1}%
+\contentsline {section}{\numberline {4}Detectors}{1}%
+\contentsline {section}{\numberline {5}Interconnection network and fan-out}{1}%
+\contentsline {section}{\numberline {6}Synaptic circuits and weighting}{1}%
+\contentsline {section}{\numberline {7}Dendrites and fan-in}{1}%
+\contentsline {section}{\numberline {8}Neural integration and threshold}{1}%
+\contentsline {section}{\numberline {9}Transmitter driver circuits}{1}%
+\contentsline {section}{\numberline {10}Time constants and subthreshold oscillations}{1}%
+\contentsline {section}{\numberline {11}Biasing}{1}%
+\contentsline {section}{\numberline {12}Power consumption, cooling, and system considerations}{1}%
+\contentsline {section}{\numberline {13}Acknowledgements}{1}%
+\contentsline {section}{\numberline {A}Appendix One}{2}%

@@ -1,0 +1,117 @@
+\documentclass[twocolumn]{article}
+
+\usepackage{geometry}
+\geometry{textwidth = 18cm,textheight = 24cm}
+
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{braket}
+\usepackage{textcomp}
+%\usepackage{lmodern}
+\usepackage{authblk}
+\usepackage{datetime}
+\usepackage{gensymb}
+\usepackage{wrapfig}
+%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{booktabs}
+%\usepackage{appendix}
+
+%\usepackage[switch,columnwise]{lineno}
+%\linenumbers
+
+\newcommand{\onlinecite}[1]{\hspace{-1 ex} \nocite{#1}\citenum{#1}} 
+
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt plus 0.3ex}
+}
+  
+\title{Comparison of semiconducting and superconducting hardware for optoelectronic neuromorphic systems}
+\author[1]{\Large{Bryce Primavera and Jeff Shainline}
+\\
+\textit{\large{National Institute of Standards and Technology}}
+\\
+\vspace{-0.2em}
+\textit{\large{325 Broadway, Boulder, CO, USA, 80305}}
+\\
+%\vspace{-0.2em}
+%\textit{\large{bryce.primavera@nist.gov, jeffrey.shainline@nist.gov}}
+}
+\date{\today}%\today
+
+\begin{document}
+
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+
+    \vspace{3em}
+    \end{abstract}
+  \end{@twocolumnfalse}
+]
+
+%\keywords{neural systems, neuromorphic computing, artificial intelligence, semiconductor devices, superconductor devices}
+
+	
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{4}
+\tableofcontents	
+	
+\section{\label{sec:introduction}Introduction}
+
+\section{\label{sec:neural_device_requirements}Device requirements for neuromorphic systems}
+	
+\section{\label{sec:light_sources}Light Sources}
+	
+\section{\label{sec:detectors}Detectors}
+
+\section{\label{sec:interconnection}Interconnection network and fan-out}
+
+\section{\label{sec:synapses}Synaptic circuits and weighting}
+
+\section{\label{sec:dendrites}Dendrites and fan-in}
+
+\section{\label{sec:neurons}Neural integration and threshold}
+
+\section{\label{sec:transmitters}Transmitter driver circuits}
+
+\section{\label{sec:time_constants}Time constants and subthreshold oscillations}
+
+\section{\label{sec:biasing}Biasing}
+
+\section{\label{sec:systems}Power consumption, cooling, and system considerations}
+
+%\begin{figure}[tb]
+%    \centering{\includegraphics[width=8.6cm]{superconducting_gap.pdf}}
+%	\captionof{figure}{\label{fig:superconducting_gap}Approximate normalized superconducting energy gap of niobium as a function of temperature.}
+%\end{figure}
+
+%\begin{equation}
+%\label{eq:energy_gap}
+%\frac{\Delta(T)}{\Delta(0)} \sim \bigg[1-\bigg(\frac{T}{T_c}\bigg)^{3.3}\bigg]^{1/2},
+%\end{equation}
+
+
+\section{Acknowledgements}
+
+\vspace{1em}
+\noindent This is a contribution of NIST, an agency of the US government, not subject to copyright.
+
+%\clearpage
+%\newpage
+\appendix
+%\appendixpage
+
+\section{\label{apx:one}Appendix One}
+Appendix One
+
+\bibliographystyle{unsrt}	
+\bibliography{ss_comparison}
+
+\end{document}
