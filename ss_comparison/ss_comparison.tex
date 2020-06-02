@@ -97,6 +97,27 @@
 %\frac{\Delta(T)}{\Delta(0)} \sim \bigg[1-\bigg(\frac{T}{T_c}\bigg)^{3.3}\bigg]^{1/2},
 %\end{equation}
 
+\section{Notes}
+Differences between neural and digital optical communication:
+\begin{itemize}
+\item neural: mux/demux not required
+\item neural: high power optical signals not necessary (nor tolerable)
+\item neural: not point to point, one to many
+\item neural: asynchronous, no clock, no phase-locked loop, no clock recovery on receive
+\item neural: 1s and 0s not equally common; signals are sparse
+\item neural: TIA + limiting amplifier + decision circuit likely uses too much power
+\item neural: noise is more tolerable, decision circuit still potentially useful
+\item neural: speed can be much lower, as demonstrated by biology
+\item neural: with lower light levels, light-source driver circuits don't need to deliver as much current
+\item multi-chip partitioning required for digital due to high speed and sensitivity to timing jitter, multi-chip not tolerable for neural (cannot have multiple chips for each neuron) Tx and Rx amplifiers cannot remain in isolation (\cite{ra2012} pg. 5)
+\item neural: bits are not sampled on a clock
+\end{itemize}
+
+other notes:
+\begin{itemize}
+\item in conventional optical communication systems, package parasitics limit speed. optoelectronic integration crucial for overcoming this limitation (\cite{ra2012} pg. 5)
+
+\end{itemize}
 
 \section{Acknowledgements}
 
