@@ -64,14 +64,17 @@
 \tableofcontents	
 	
 \section{\label{sec:introduction}Introduction}
+Lay out the problem: 
 
 \section{\label{sec:neural_device_requirements}Device requirements for neuromorphic systems}
 	
 \section{\label{sec:light_sources}Light Sources}
+Short section, pointing out we're trying to consider systems with similar light sources, hopefully silicon, operated at low temp. Temp could be 77K or 40K or 4K, but we'll try to assume it doesn't matter. 
 	
-\section{\label{sec:detectors}Detectors}
-
 \section{\label{sec:interconnection}Interconnection network and fan-out}
+Similarly to \ref{sec:light_sources}, we want to assume semi and super systems are using the same concepts and hardware for the interconnection network. Fan-out (out degree) is constrained to be the same for the two systems, so light sources and transmitter driver circuits must be scaled to produce the appropriate number of photons.
+
+\section{\label{sec:detectors}Detectors}
 
 \section{\label{sec:synapses}Synaptic circuits and weighting}
 
@@ -79,13 +82,16 @@
 
 \section{\label{sec:neurons}Neural integration and threshold}
 
+\section{\label{sec:adaptation}Synaptic, dendritic, and neuronal adaptation}
+Discuss options for short- and long-term synaptic plasticity;, adaptive dendritic functions; and neuronal refractory period, spike-frequency adaptation, and homeostatic plasticity (threshold adaptation).
+
 \section{\label{sec:transmitters}Transmitter driver circuits}
 
 \section{\label{sec:time_constants}Time constants and subthreshold oscillations}
 
 \section{\label{sec:biasing}Biasing}
 
-\section{\label{sec:systems}Power consumption, cooling, and system considerations}
+\section{\label{sec:systems}Power consumption, cooling, and system considerations (including fabrication and production)}
 
 %\begin{figure}[tb]
 %    \centering{\includegraphics[width=8.6cm]{superconducting_gap.pdf}}
@@ -116,7 +122,8 @@ Differences between neural and digital optical communication:
 other notes:
 \begin{itemize}
 \item in conventional optical communication systems, package parasitics limit speed. optoelectronic integration crucial for overcoming this limitation (\cite{ra2012} pg. 5)
-
+\item for long time constants, semiconductors can augment RC by op amp gain: $RC \rightarrow (1+A)RC$, where $A$ is the op amp gain, which can be enormous, like 300,000. thus, essentially arbitrarily long time constants can be achieved. the price is power.
+\item regarding subthreshold oscillations, RLC behavior in semiconductors can be achieved with op amps. in this case, there is no inductor, and that role is played by the active op amp. the price is power
 \end{itemize}
 
 \section{Acknowledgements}
