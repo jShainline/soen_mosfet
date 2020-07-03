@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  1 JUN 2020 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  8 JUN 2020 16:01
 entering extended mode
 **./ss_comparison.tex
 (ss_comparison.tex
@@ -566,7 +566,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (ss_comparison.toc)
+) (ss_comparison.toc
+Underfull \hbox (badness 1769) in paragraph at lines 12--12
+ \OT1/cmr/bx/n/10 con-sid-er-a-tions (in-clud-ing fab-ri-ca-tion and 
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `ss_comparison.toc'.
 
@@ -581,37 +586,37 @@ Underfull \hbox (badness 1596) in paragraph at lines 88--88
  []
 
 
-Overfull \vbox (43.47475pt too high) has occurred while \output is active []
+Overfull \vbox (80.71832pt too high) has occurred while \output is active []
 
 
 [1{C:/Users/jeffr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-(ss_comparison.bbl) [2
-
-] (ss_comparison.aux) ) 
+(ss_comparison.bbl) [2] (ss_comparison.aux) ) 
 Here is how much of TeX's memory you used:
- 6300 strings out of 492452
- 89752 string characters out of 3129807
- 171618 words of memory out of 3000000
- 10537 multiletter control sequences out of 15000+200000
- 12493 words of font info for 45 fonts, out of 3000000 for 9000
+ 6314 strings out of 492452
+ 89900 string characters out of 3129807
+ 172618 words of memory out of 3000000
+ 10547 multiletter control sequences out of 15000+200000
+ 14870 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,5n,42p,1018b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\jeffr\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
-r/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-bx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmti12.pfb>
-Output written on ss_comparison.pdf (2 pages, 127330 bytes).
+ <C:\Users\jeffr\AppData\Local\MiK
+TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on ss_comparison.pdf (2 pages, 144986 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

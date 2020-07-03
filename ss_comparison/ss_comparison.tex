@@ -64,14 +64,52 @@
 \tableofcontents	
 	
 \section{\label{sec:introduction}Introduction}
+Lay out the problem: 
+\begin{itemize}
+\item neuromorphic supercomputing, scale of human brain
+\item machines that perform cognition
+\item not edge
+\item not focused on a single metric like speed or power, but rather on overall system scalability and performance
+\item seek the highest-performing artificial intelligence
+\item system considerations are paramount
+\item attempt to find physical limits of cognitive systems
+\item device features cannot be introduced if they are highly sensitive or require external tuning
+\item present-day neuromorphic cognitive systems using mosfets struggle in communication
+\item AER is a great way to make progress with existing hardware, but ultimately becomes a limiting factor
+\item optical communication may alleviate bottlenecks simply by avoiding wiring parasitics
+\item we consider here an architecture with a single light source at each neuron
+\item this light source emits pulses playing the role of action potentials each time a neuron fires
+\item we do not consider any frequency or spatial multiplexing concepts from optical communications here, as they tend to introduce requirements for precise device tolerances or active control of elements that are not scalable to the size of systems we seek
+\item action potentials are simply bursts of incoherent photons that a routed to all synaptic connections on a directional branching tree distribution network that taps off equal quantities of light to each synaptic connection
+\item photonic action potentials are received as binary communication signals
+\item synaptic weights and subsequent processing/computation is performed entirely in the electronic domain; light is used exclusively for communication
+\item the new challenge is that integrated light sources do not exist that can be placed at every neuron across a silicon wafer with modern VLSI technology
+\item the route to such an integrated device would be far easier if silicon light sources could be employed, an option if one accepts cryogenic operation
+\item here we assume such an option will be available at a future date
+\item the primary objective of the present study is to compare two approaches to the electronic circuits that would accompany such an optical communication network for large-scale cognitive systems
+\item the two approaches are semiconducting circuits and hybrid semiconducting/superconducting circuits
+\item in the semi case, photodetectors are waveguide-integrated semiconductor photodiodes, all computational circuits are based on mosfets, and light sources are waveguide-integrated semiconductor leds or lasers (focus on leds for processing/operation simplicity)
+\item in the super case, photodetectors are waveguide-integrated snspds, synaptic and dendritic circuits are based primarily on jjs coupled through mutual inductors, neuron circuits combine superconducting and semiconducting components, and the same light sources are employed
+\item we attempt to determine which of these approaches to neuromorphic hardware is likely to achieve superior cognitive performance by assessing their functionality in reference to established metrics from neuroscience and cognitive computing
+\item we describe these metrics in Sec.\,\ref{sec:neural_device_requirements}.
+\end{itemize}
 
 \section{\label{sec:neural_device_requirements}Device requirements for neuromorphic systems}
+\begin{itemize}
+\item synaptic
+\item dendritic
+\item neuronal
+\item communication network
+\end{itemize}
 	
 \section{\label{sec:light_sources}Light Sources}
+Short section, pointing out we're trying to consider systems with similar light sources, hopefully silicon, operated at low temp. Temp could be 77K or 40K or 4K, but we'll try to assume it doesn't matter. 
 	
-\section{\label{sec:detectors}Detectors}
-
 \section{\label{sec:interconnection}Interconnection network and fan-out}
+Short section. Similarly to \ref{sec:light_sources}, we want to assume semi and super systems are using the same concepts and hardware for the interconnection network. Fan-out (out degree) is constrained to be the same for the two systems, so light sources and transmitter driver circuits must be scaled to produce the appropriate number of photons.
+
+\section{\label{sec:detectors}Detectors}
+Important section
 
 \section{\label{sec:synapses}Synaptic circuits and weighting}
 
@@ -79,13 +117,16 @@
 
 \section{\label{sec:neurons}Neural integration and threshold}
 
+\section{\label{sec:adaptation}Synaptic, dendritic, and neuronal adaptation}
+Discuss options for short- and long-term synaptic plasticity;, adaptive dendritic functions; and neuronal refractory period, spike-frequency adaptation, and homeostatic plasticity (threshold adaptation).
+
 \section{\label{sec:transmitters}Transmitter driver circuits}
 
 \section{\label{sec:time_constants}Time constants and subthreshold oscillations}
 
 \section{\label{sec:biasing}Biasing}
 
-\section{\label{sec:systems}Power consumption, cooling, and system considerations}
+\section{\label{sec:systems}Power consumption, cooling, and system considerations (including fabrication and production)}
 
 %\begin{figure}[tb]
 %    \centering{\includegraphics[width=8.6cm]{superconducting_gap.pdf}}
@@ -116,7 +157,8 @@ Differences between neural and digital optical communication:
 other notes:
 \begin{itemize}
 \item in conventional optical communication systems, package parasitics limit speed. optoelectronic integration crucial for overcoming this limitation (\cite{ra2012} pg. 5)
-
+\item for long time constants, semiconductors can augment RC by op amp gain: $RC \rightarrow (1+A)RC$, where $A$ is the op amp gain, which can be enormous, like 300,000. thus, essentially arbitrarily long time constants can be achieved. the price is power.
+\item regarding subthreshold oscillations, RLC behavior in semiconductors can be achieved with op amps. in this case, there is no inductor, and that role is played by the active op amp. the price is power
 \end{itemize}
 
 \section{Acknowledgements}

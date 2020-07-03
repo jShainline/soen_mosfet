@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {9}Transmitter driver circuits}{1}% 
 \contentsline {section}{\numberline {10}Time constants and subthreshold oscillations}{1}% 
 \contentsline {section}{\numberline {11}Biasing}{1}% 
-\contentsline {section}{\numberline {12}Power consumption, cooling, and system considerations}{1}% 
+\contentsline {section}{\numberline {12}Power consumption, cooling, and system considerations (including fabrication and production)}{1}% 
 \contentsline {section}{\numberline {13}Notes}{1}% 
 \contentsline {section}{\numberline {14}Acknowledgements}{2}% 
 \contentsline {section}{\numberline {A}Appendix One}{2}% 
