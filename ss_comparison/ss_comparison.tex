@@ -13,10 +13,12 @@
 %\usepackage{lmodern}
 \usepackage{authblk}
 \usepackage{datetime}
-\usepackage{gensymb}
+%\usepackage{gensymb}
 \usepackage{wrapfig}
 %\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage{booktabs}
+%\usepackage{booktabs}
+\usepackage{enumitem}
+\setlist{nosep}
 %\usepackage{appendix}
 
 %\usepackage[switch,columnwise]{lineno}
@@ -66,7 +68,7 @@
 \section{\label{sec:introduction}Introduction}
 Lay out the problem: 
 \begin{itemize}
-\item neuromorphic supercomputing, scale of human brain
+\item objective: neuromorphic supercomputing, scale of human brain
 \item machines that perform cognition
 \item not edge
 \item not focused on a single metric like speed or power, but rather on overall system scalability and performance
@@ -77,6 +79,7 @@ Lay out the problem:
 \item present-day neuromorphic cognitive systems using mosfets struggle in communication
 \item AER is a great way to make progress with existing hardware, but ultimately becomes a limiting factor
 \item optical communication may alleviate bottlenecks simply by avoiding wiring parasitics
+\item optical communication may enable the largest neuronal pool \cite{sh2018_ICRC}, which we assume correlates with high cognition
 \item we consider here an architecture with a single light source at each neuron
 \item this light source emits pulses playing the role of action potentials each time a neuron fires
 \item we do not consider any frequency or spatial multiplexing concepts from optical communications here, as they tend to introduce requirements for precise device tolerances or active control of elements that are not scalable to the size of systems we seek
@@ -92,7 +95,16 @@ Lay out the problem:
 \item in the super case, photodetectors are waveguide-integrated snspds, synaptic and dendritic circuits are based primarily on jjs coupled through mutual inductors, neuron circuits combine superconducting and semiconducting components, and the same light sources are employed
 \item we attempt to determine which of these approaches to neuromorphic hardware is likely to achieve superior cognitive performance by assessing their functionality in reference to established metrics from neuroscience and cognitive computing
 \item we describe these metrics in Sec.\,\ref{sec:neural_device_requirements}.
+\item we're not seeking biologically plausible time scales, but rather time scales from as long as possible to as fast as possible, working with the hypothesis that systems that have correlated dynamics and memory over as broad a range as possible will achieve optimal cognition
 \end{itemize}
+
+One way this paper could proceed is to compare mosfet-based circuits that implement the relevant operations as described in Ref.\,\cite{chst2014} with soens circuits as discussed in Refs.\,\cite{shbu2019,sh2020}. Reference \cite{chst2014} describes mosfet circuits leveraging subthreshold operation principles to achieve short-term and long-term synaptic plasticity, adaptive threshold, spike production, and scaling to networks. Dendritic processing is not discussed. If we can do an excellent job understanding these circuits and determining how to couple the synaptic receivers to a photodetector and the spike production circuits to a light source, we should have most of what we need to do our comparison. The study could essentially be a comparison of the optoelectronic versions of the circuits in Ref.\,\cite{chst2014} with those in Refs.\,\cite{shbu2019,sh2020}. A lot of the relevant work regarding soens has been done previously, but a few details may need to be considered, such as how the spiking activity of a neuron provides a feedback signal to all of its synapses for plasticity. Additional work may be required on the beyond-stdp learning rules.
+
+Ref.\,\cite{chst2014} discusses hardware/software ecosystem. It appears likely that using photonic communication without AER will lead to significant reduction in complexity of network configuration, potentially significantly reducing the demands on software to control the system. This does come at the cost of reduced reconfigurability of networks.
+
+The circuits in Ref.\,\cite{chst2014} are subthreshold current-mode circuits. Are there any basic physical statements we can make about using photodiodes (which are current-mode circuits) as inputs?
+
+Attention should be paid to device mismatch and tolerances, aspects that affect subthreshold mosfets as well as jjs. Can we determine whether one system will suffer less than the other? Does it matter? Can networks of adaptive, spiking neurons compensate?
 
 \section{\label{sec:neural_device_requirements}Device requirements for neuromorphic systems}
 \begin{itemize}
@@ -108,10 +120,120 @@ Short section, pointing out we're trying to consider systems with similar light 
 \section{\label{sec:interconnection}Interconnection network and fan-out}
 Short section. Similarly to \ref{sec:light_sources}, we want to assume semi and super systems are using the same concepts and hardware for the interconnection network. Fan-out (out degree) is constrained to be the same for the two systems, so light sources and transmitter driver circuits must be scaled to produce the appropriate number of photons.
 
+With such an optical communication scheme, large networks of neurons can be implemented in an asynchronous manner without address requirements that lead to memory challenges in large networks. Each communication channel from a neuron to a synapse has a dedicated waveguide connection, so no time-multiplexing is required. One waveguide leaves each neuron, and it branches as needed to achieve the desired graph structure.
+
 \section{\label{sec:detectors}Detectors}
-Important section
+Important section. 
+\begin{itemize}
+\item Analyze responsivity and noise to determine how many photons must be incident per pulse on snspd and photodiode to achieve a certain error ($<1\%$, for example)
+\item Consider energy consumption of detector per pulse
+\item also any quiescent power consumption
+\item area
+\item fabrication
+\item give reasons not to use APDs (Razavi \cite{ra2012}, pg. 57)
+\item therefore, not using semiconductor single-photon detectors
+\end{itemize}
+
+\vspace{2em}
+\noindent Responsivity: $I_p = R_{ph}P_{op}$, where $I_p$ is current generated by photodiode, $R_{ph}$ is the responsivity, and $P_{op}$ is the optical power.
+
+\vspace{2em}
+\noindent quantum efficiency: $\eta = \frac{I_p/q}{P_{op}/(hc/\lambda)} = \frac{1.24R_{ph}}{\lambda} = \frac{1}{1+\tau_{r}/\tau_{nr}}$
+
+\vspace{2em}
+\noindent Receiver error rate: is Razavi's noise/error rate model correct for us? We need to pay special attention to two limiting cases: 1) a single spike is received after a long period of rest (string or zeros); and 2) a fast spike train is received (burst input) (one zero one zero ...) Compare Razavi's analysis to Bryce's calculation. 
+
+Here's Bryce's calculation:
+
+\subsection{Motivation}
+The ultimate goal of this project will be to compare the performance and feasibility of various incoherent optoelectronic platforms for neuromorphic computing. Semiconductor photodetectors have already become a ubiquitous technology and are consequently a natural starting point for a whole class of potential optoelectronic neuromorphic hardware. This short summary seeks to accomplish two goals: (1) To determine the minimum optical power required for the detector to register an optical spiking event and (2) to analyze both the static and dynamic energy dissipation in a detector.
+
+\subsection{Photodetector Basics and Noise}
+%\quad DERIVATION PRIMARILY DRAWN FROM THESE TWO SOURCES:
+%\newline
+%\hyperlink{http://ecee.colorado.edu/~bart/ecen6355/chapt-05.pdf}{http://ecee.colorado.edu/~bart/ecen6355/chapt-05.pdf} - section 5.1.2 pages 5.9-5.11
+%\newline
+%\hyperlink{https://users.physics.ox.ac.uk/~rtaylor/teaching/Opto_lecture5.pdf}{https://users.physics.ox.ac.uk/~rtaylor/teaching/Opto_lecture5.pdf} - section 4, pages 7-9
+%\newline
+
+The most basic parameter for a photodetector is the \textit{responsivity}, $\mathcal{R}$. The responsivity is simply the ratio of photocurrent to input optical power. It is related to the external efficiency, $\eta$ as shown below:
+\begin{equation}
+    \mathcal{R} = \frac{q\eta\lambda}{hc}
+\end{equation}
+where $\lambda$ is the wavelength of the incoming light. $\eta$, and therefore $\mathcal{R}$, can be expected to be strong functions of wavelength. With responsivity defined, it is straightforward to predict the amount of photocurrent ($I_{ph}$) produced for a certain input optical power ($P_{opt}$):
+\begin{equation}
+    I_{ph} = \mathcal{R}P_{opt}
+\end{equation}
+
+In order to produce a measurable response, the photocurrent must be larger than the RMS fluctuations of the noise current. There are two primary sources of this noise in photodiodes - dark current noise and Johnson Noise from the load resistor. The noise from the dark current will be considered first. The RMS fluctuations can be given as:
+\begin{equation}
+    <I^{2}> = 2qI\Delta f
+\end{equation}
+$I$ is simply the total current flowing through the diode and $\Delta f$ is the bandwidth of the detector. This is already an interesting detail, as the noise can potentially be reduced by operating at a lower bandwidth (I guess this corresponds to something like integrating the signal?). For this paper, I will take the bandwidth to be 20 MHz, for sake of comparison with SOENS. In principle all sources of current - ideal diode current, SHR, band-to-band recombination, and photocurrent - should be included in $I$. 
+
+We can approximate $I = I_{D} + I_{ph}$, where $I_{D}$ is the dark current. There is an additional Johnson Noise associated with the load resistor, $R_{L}$. This leads to a total noise, $I_{N}$ of:
+\begin{equation}
+    I_{N} = \sqrt{2qI\Delta f + \frac{4k_{B}T\Delta f}{R_{L}}}
+\end{equation}
+Equating the photocurrent with the RMS noise fluctuations gives an estimate of the bare minimum detectable optical power.
+\begin{equation}
+    P_{min} = \frac{I_N}{\mathcal{R}}
+\end{equation}
+Or in terms of the minimum necessary photocurrent, $I_{ph}$:
+\begin{equation}
+    I_{ph} = \sqrt{2q(I_D+I_{ph})\Delta f + \frac{4k_{B}T\Delta f}{R_{L}}
+    }
+\end{equation}
+
+Solving the quadratic equation for $I_{ph}$ yields:
+\begin{equation}
+    I_{ph} = q\Delta f(1+\sqrt{1+\frac{2I_D+}{q\Delta f} +
+    \frac{4k_BT}{q^2R_L\Delta f}})
+\end{equation}
+where $I_R = \sqrt{\frac{4k_{B}T\Delta f}{R_{L}}}$, the contribution to the noise current from the Johnson noise of the resistor. The minimum optical power, $P_{min}$ follows from the responsivity:
+\begin{equation}
+    P_{min} = \frac{I_{ph}}{\mathcal{R}}=
+    \frac{q\Delta f}{\mathcal{R}}(1+\sqrt{1+\frac{2I_D}{q\Delta f} +
+    \frac{4k_BT}{q^2R_L\Delta f}})
+\end{equation}
+
+The next task is to determine the appropriate temporal length of an optical spike. For a photodetector operating at its maximum rate, it suffices to use 1/$\Delta f$ as the duration of spike. Of course, this duration will likely be set by the speed of the LED, but for now I'm going to just assume that the bandwidth of our receiver circuit was designed to coincide with the bandwidth of the LED. In this case, with photon energy $E_{ph}$, the necessary number of photons per spike ($N$) is then:
+\begin{equation}
+    N = \frac{P_{min}}{E_{ph}\Delta f}
+\end{equation}
+
+A plot of the minimum number of photons per spike vs bandwidth is presented in Figure 1. From experimenting with some plausible parameters, it seems likely that noise will be dominated by the Johnson Noise in the load resistor. This noise can be reduced by utilizing a larger resistor. However, a larger $R_L$ will degrade the bandwidth of the circuit. A lower bandwidth requires the light source to be on for longer and increases the necessary optical power. In Figure 1, the color-coded vertical lines represent the maximum frequency that a 10pF photodiode could respond at. In fact, since the bandwidth is inversely proportional to $R_L$, it can be seen from equation 8 that in the resistor dominated noise regime, N will become independent of $R_L$. Fortunately, this bandwidth limit can be beaten by using a transimpedance amplifier as we will see in following sections.
+\begin{figure}
+    \centering
+    \includegraphics[width=8.6cm]{photon_V_BW.png}
+    \caption{A plot of the minimum number of photons needed per spike as a function of Bandwidth. $I_D$ = 10nA, $\mathcal{R}$ = .5, and $\lambda$ = 1.3$\mu$m. The dotted vertical lines correspond to the maximum frequency achievable without a transimpedance amplifier for a 10pF photodiode. }
+    \label{fig:my_label}
+\end{figure}
+
+Finally, we can also see a simple example of explicit temperature dependence. $I_D$ is a strong function of temperature and will play a role when we get to static power dissipation, but the Johnson noise in the resistors is more important for determining the minimum optical signal. It has a simple square root temperature dependence, which can be seen in figure 2.
+\begin{figure}
+    \centering
+    \includegraphics[width=8.6cm]{Temp_Photon_spike.png}
+    \caption{Temperature dependence of the minimum optical signal. $R_L = 100k\Omega$}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{Transimpedance amplifier}
 
 \section{\label{sec:synapses}Synaptic circuits and weighting}
+Important section.
+\begin{itemize}
+\item comparison of possible functionalities
+\begin{itemize}
+\item short-term facilitating
+\item short-term depressing
+\item long-term event-based potentiation/depression (STDP)
+\end{itemize}
+\item for each, consider information-processing metrics such as range of operation, bit depth 
+\item for each, also consider area, power
+\item also sensitivity (exponential weight dependence on voltage in subthreshold mosfet vs polynomial (almost linear) weight dependence on current in soens)
+\item discuss in the context of Fusi's work (\cite{amfu1994,fudr2005,fuab2007})
+\end{itemize}
 
 \section{\label{sec:dendrites}Dendrites and fan-in}
 

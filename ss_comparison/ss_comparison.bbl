@@ -1,8 +1,47 @@
 \begin{thebibliography}{1}
 
+\bibitem{sh2018_ICRC}
+J.M. Shainline.
+\newblock The largest cognitive systems will be optoelectronic.
+\newblock In {\em IEEE International Conference on Rebooting Computing}. IEEE,
+  Nov. 2018.
+
+\bibitem{chst2014}
+E.~Chicca, F.~Stefanini, C.~Bartolozzi, and G.~Indiveri.
+\newblock {Neuromorphic Electronic Circuits for Building Autonomous Cognitive
+  Systems}.
+\newblock {\em IEEE J. Sel. Top. Quant. Electron.}, 26:7700315, 2020.
+
+\bibitem{shbu2019}
+J.M. Shainline, S.M. Buckley, A.N. McCaughan, J.~Chiles, A.~Jafari-Salim,
+  M.~Castellanos-Beltran, C.A. Donnelly, M.L. Schneider, R.P. Mirin, and S.W.
+  Nam.
+\newblock {Superconducting Optoelectronic Loop Neurons}.
+\newblock {\em J. Appl. Phys.}, 126:044902, 2019.
+
+\bibitem{sh2020}
+J.M. Shainline.
+\newblock {Fluxonic Processing of Photonic Synapse Events}.
+\newblock {\em IEEE J. Sel. Top. Quant. Electron.}, 26:7700315, 2020.
+
 \bibitem{ra2012}
 B.~Razavi.
 \newblock {\em {Design of Integrated Circuits for Optical Communications}}.
 \newblock Wiley, second edition, 2012.
+
+\bibitem{amfu1994}
+D.J. Amit and S.~Fusi.
+\newblock Learning in neural networks with material synapses.
+\newblock {\em Neural Computation}, 6:957, 1994.
+
+\bibitem{fudr2005}
+S.~Fusi, P.J. Drew, and L.F. Abbott.
+\newblock Casdcade models of synaptically stored memories.
+\newblock {\em Neuron}, 45:599, 2005.
+
+\bibitem{fuab2007}
+S.~Fusi and L.F. Abbott.
+\newblock Limits on the memory storage capacity of bounded synapses.
+\newblock {\em Nature Neuroscience}, 10:485, 2007.
 
 \end{thebibliography}

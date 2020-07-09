@@ -1,15 +1,19 @@
 \contentsline {section}{\numberline {1}Introduction}{1}% 
-\contentsline {section}{\numberline {2}Device requirements for neuromorphic systems}{1}% 
-\contentsline {section}{\numberline {3}Light Sources}{1}% 
-\contentsline {section}{\numberline {4}Detectors}{1}% 
-\contentsline {section}{\numberline {5}Interconnection network and fan-out}{1}% 
-\contentsline {section}{\numberline {6}Synaptic circuits and weighting}{1}% 
-\contentsline {section}{\numberline {7}Dendrites and fan-in}{1}% 
-\contentsline {section}{\numberline {8}Neural integration and threshold}{1}% 
-\contentsline {section}{\numberline {9}Transmitter driver circuits}{1}% 
-\contentsline {section}{\numberline {10}Time constants and subthreshold oscillations}{1}% 
-\contentsline {section}{\numberline {11}Biasing}{1}% 
-\contentsline {section}{\numberline {12}Power consumption, cooling, and system considerations (including fabrication and production)}{1}% 
-\contentsline {section}{\numberline {13}Notes}{1}% 
-\contentsline {section}{\numberline {14}Acknowledgements}{2}% 
-\contentsline {section}{\numberline {A}Appendix One}{2}% 
+\contentsline {section}{\numberline {2}Device requirements for neuromorphic systems}{2}% 
+\contentsline {section}{\numberline {3}Light Sources}{2}% 
+\contentsline {section}{\numberline {4}Interconnection network and fan-out}{2}% 
+\contentsline {section}{\numberline {5}Detectors}{3}% 
+\contentsline {subsection}{\numberline {5.1}Motivation}{3}% 
+\contentsline {subsection}{\numberline {5.2}Photodetector Basics and Noise}{3}% 
+\contentsline {subsection}{\numberline {5.3}Transimpedance amplifier}{4}% 
+\contentsline {section}{\numberline {6}Synaptic circuits and weighting}{4}% 
+\contentsline {section}{\numberline {7}Dendrites and fan-in}{4}% 
+\contentsline {section}{\numberline {8}Neural integration and threshold}{4}% 
+\contentsline {section}{\numberline {9}Synaptic, dendritic, and neuronal adaptation}{4}% 
+\contentsline {section}{\numberline {10}Transmitter driver circuits}{5}% 
+\contentsline {section}{\numberline {11}Time constants and subthreshold oscillations}{5}% 
+\contentsline {section}{\numberline {12}Biasing}{5}% 
+\contentsline {section}{\numberline {13}Power consumption, cooling, and system considerations (including fabrication and production)}{5}% 
+\contentsline {section}{\numberline {14}Notes}{5}% 
+\contentsline {section}{\numberline {15}Acknowledgements}{5}% 
+\contentsline {section}{\numberline {A}Appendix One}{5}% 

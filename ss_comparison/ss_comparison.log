@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  8 JUN 2020 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  8 JUL 2020 15:07
 entering extended mode
 **./ss_comparison.tex
 (ss_comparison.tex
@@ -394,9 +394,6 @@ LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks23
 \dt@b=\toks24
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/was\gensymb.sty"
-Package: gensymb 2003/07/02 v1.0 (WaS)
-)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/wrapfig\wrapfig.sty"
 \wrapoverhang=\dimen129
 \WF@size=\dimen130
@@ -405,48 +402,41 @@ Package: gensymb 2003/07/02 v1.0 (WaS)
 \WF@everypar=\toks25
 Package: wrapfig 2003/01/31  v 3.6
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/booktabs\booktabs.sty"
-Package: booktabs 2019/10/08 v1.6180339 publication quality tables
-\heavyrulewidth=\dimen131
-\lightrulewidth=\dimen132
-\cmidrulewidth=\dimen133
-\belowrulesep=\dimen134
-\belowbottomsep=\dimen135
-\aboverulesep=\dimen136
-\abovetopsep=\dimen137
-\cmidrulesep=\dimen138
-\cmidrulekern=\dimen139
-\defaultaddspace=\dimen140
-\@cmidla=\count136
-\@cmidlb=\count137
-\@aboverulesep=\dimen141
-\@belowrulesep=\dimen142
-\@thisruleclass=\count138
-\@lastruleclass=\count139
-\@thisrulewidth=\dimen143
+("C:\Program Files\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip48
+\enit@outerparindent=\dimen131
+\enit@toks=\toks26
+\enit@inbox=\box30
+\enit@count@id=\count136
+\enitdp@description=\count137
 )
-(ss_comparison.aux)
+(ss_comparison.aux
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+)
 \openout1 = `ss_comparison.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
-7.
+9.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    ... okay on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -487,17 +477,17 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
-\scratchdimen=\dimen144
-\scratchbox=\box30
-\nofMPsegments=\count141
-\nofMParguments=\count142
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count143
-\MPscratchDim=\dimen145
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count138
+\scratchdimen=\dimen132
+\scratchbox=\box31
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen133
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks28
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -544,30 +534,19 @@ G,.JBIG2,.JB2,.eps]
 ("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fc-english.def"
 File: fc-english.def 2016/01/12
 )
-\symgns@font=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 47.
-Package gensymb Info: Math companion symbols declared on input line 47.
-LaTeX Info: Redefining \degree on input line 47.
-LaTeX Info: Redefining \celsius on input line 47.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 47.
-LaTeX Info: Redefining \ohm on input line 47.
-Package gensymb Info: Using \textohm for \ohm on input line 47.
-Package gensymb Info: Using \textmu for \micro on input line 47.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (ss_comparison.toc
-Underfull \hbox (badness 1769) in paragraph at lines 12--12
+Underfull \hbox (badness 1769) in paragraph at lines 16--16
  \OT1/cmr/bx/n/10 con-sid-er-a-tions (in-clud-ing fab-ri-ca-tion and 
  []
 
@@ -575,48 +554,93 @@ Underfull \hbox (badness 1769) in paragraph at lines 12--12
 \tf@toc=\write3
 \openout3 = `ss_comparison.toc'.
 
+ [1{C:/Users/jeffr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-Underfull \hbox (badness 7379) in paragraph at lines 74--74
-[][]\OT1/cmr/bx/n/14.4 Interconnection net-work and
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]\OT1/cmr/m/n/10 synaptic weights and sub-se-quent pro-cess-
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 88--88
+Underfull \hbox (badness 7291) in paragraph at lines 88--89
+\OT1/cmr/m/n/10 ing/computation is per-formed en-tirely in the
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 88--89
+\OT1/cmr/m/n/10 elec-tronic do-main; light is used ex-clu-sively for
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 94--95
+[]\OT1/cmr/m/n/10 in the semi case, pho-tode-tec-tors are waveguide-
+ []
+
+
+Underfull \hbox (badness 7379) in paragraph at lines 120--120
+[][]\OT1/cmr/bx/n/14.4 Interconnection net-work and
+ []
+
+[2] [3]
+<photon_V_BW.png, id=27, 631.35875pt x 444.66125pt>
+File: photon_V_BW.png Graphic file (type png)
+<use photon_V_BW.png>
+Package pdftex.def Info: photon_V_BW.png  used on input line 208.
+(pdftex.def)             Requested size: 244.69386pt x 172.33836pt.
+<Temp_Photon_spike.png, id=29, 631.35875pt x 444.66125pt>
+File: Temp_Photon_spike.png Graphic file (type png)
+<use Temp_Photon_spike.png>
+Package pdftex.def Info: Temp_Photon_spike.png  used on input line 216.
+(pdftex.def)             Requested size: 244.69386pt x 172.33836pt.
+
+Underfull \hbox (badness 1596) in paragraph at lines 251--251
 [][]\OT1/cmr/bx/n/14.4 Power con-sump-tion, cool-ing,
  []
 
 
-Overfull \vbox (80.71832pt too high) has occurred while \output is active []
+Underfull \vbox (badness 7221) has occurred while \output is active []
+
+ [4 <./photon_V_BW.png> <./Temp_Photon_spike.png>]
+Underfull \vbox (badness 1997) has occurred while \output is active []
 
 
-[1{C:/Users/jeffr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(ss_comparison.bbl
+Underfull \hbox (badness 1694) in paragraph at lines 16--21
+[]\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
+ []
 
+) [5] (ss_comparison.aux)
 
-]
-(ss_comparison.bbl) [2] (ss_comparison.aux) ) 
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6314 strings out of 492452
- 89900 string characters out of 3129807
- 172618 words of memory out of 3000000
- 10547 multiletter control sequences out of 15000+200000
- 14870 words of font info for 55 fonts, out of 3000000 for 9000
+ 6547 strings out of 492452
+ 94245 string characters out of 3129807
+ 182249 words of memory out of 3000000
+ 10786 multiletter control sequences out of 15000+200000
+ 13485 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,5n,42p,1018b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\jeffr\AppData\Local\MiK
-TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
+ 46i,6n,77p,1196b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\jeffr\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ss_comparison.pdf (2 pages, 144986 bytes).
+Output written on ss_comparison.pdf (5 pages, 264098 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
