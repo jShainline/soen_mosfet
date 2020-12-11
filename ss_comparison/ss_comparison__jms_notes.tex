@@ -108,6 +108,12 @@ Attention should be paid to device mismatch and tolerances, aspects that affect 
 
 MOSFET model: using predictive technology model (PTM) from ASU.
 
+It is not our intention to argue that certain technologies should not be investigated. At this early stage in the development of this complex field, many ideas should be pursued. It is also not clear that in the long-term technological limit, a single, primary technology will dominate. It is possible that many different approaches to adaptive, intelligent, neuromorphic systems will reach maturity and excel in different contexts. Most starkly, one does not expect devices and systems optimized for small-scale, power-starved, edge applications to take the same form as devices and systems optimized for extreme cognitive performance, considering the objectives and constraints are significantly divergent. 
+
+It is our intention instead to assess whether superconducting optoelectronic neural systems deserve to be in the pool of contenders as a hardware platform for achieving extreme cognitive performance. The concept begins from the zeroth order, intuitive (to us) conjectures that 1) optical communication is physically optimal at large scale, 2) few-photon communication is advantageous from a power perspective. First-order elucidation that JJ circuits with diverse circuit parameters, spiking and thresholding behaviors, and convenient activity-based adaptive responses led us to the state of tempered optimism that such hardware might be capable of realizing large-scale spiking neural networks, potentially capable of general intelligence. Yet advocating for hardware combining semiconductors, superconductors, and photonics positions one at the tri-critical point, balanced between compatriot and pariah in all three communities. It is our objective to assess whether the superconducting optoelectronic approach to large-scale neural sytems for artificial intelligence withstands this round of second-order analyses where we subject the concept to scrutiny from numerous angles and quantitatively compare its modeled performance relative to a semiconductor optoelectronic approach that may be more palatable to the community, perhaps by 1/3. Our position would surely be less lonely if we could motivate others to join the soens pursuit, and we hope the study presented here represents prudent analysis that can give us confidence to second order that we are on the right track and can be justified when encouraging others to try playing in this sandbox.
+
+This work is largely motivated by a scientific question, albeit one with potentially significant technological ramifications: is it possible to construct an apparatus as generally intelligent as a human being? Going one step further, what are the physical limits of cognitive intelligence?
+
 \section{\label{sec:neural_device_requirements}Device requirements for neuromorphic systems}
 \begin{itemize}
 \item synaptic
@@ -244,6 +250,26 @@ Important section.
 
 \section{\label{sec:adaptation}Synaptic, dendritic, and neuronal adaptation}
 Discuss options for short- and long-term synaptic plasticity;, adaptive dendritic functions; and neuronal refractory period, spike-frequency adaptation, and homeostatic plasticity (threshold adaptation).
+
+\subsection{Memristors}
+
+\begin{itemize}
+
+\item Synaptic adaptation occurs due to atomic motion within the material. This means all time constants and signal levels necessary for adaptation are strongly coupled to material parameters. Rather than designing a circuit with essentially arbitrary time constants and signal levels that are exactly the same as the signal levels used elsewhere in the system for information processing, one must explore many materials and find the ones that work closest to the signal levels used for the rest of dendritic and neuronal processing.
+
+\item Motion at the atomic level also risks degradation over time. If such a synapse performs short-term adaptation (with conductance changing on the time scale of the inter-spike interval), even materials that can survive billions of cycles will reach the end of life in a matter of days, assuming synapses receive inputs on average at 1\,kHz, as expected for optoelectronic neurons
+
+\item One may argue synaptic plasticity occurs due to structural changes at the nanoscale (particularly long-term adaptation), so memristor mechanisms are similar to biology in this regard. However, the assembly of molecular machines at the nanoscale via protein synthesis and construction leads to the potential for growth and regeneration in a manner that will be difficult for memristors to match. Memristors will suffer from the second law of thermodynamics, eventually succumbing to a homogeneous, disordered state, while the organizing capabilities of biological synapses locally circumvent this inconvenient propensity.
+
+\item The plasticity mechanisms proposed in soens are based around achieving desired functionality through circuit design, with complexity and responses limited primarily by area, while the plasticity mechanisms leveraged in memristors are based on material properties, and are therefore limited primarily by the physics of the universe. There is a large parameter space to explore in both cases, but circuit design provides much more opportunity for flexibility and implementation of diverse responses across the network, while diverse responses from memristors may require a large number of different materials, which will be difficult to fabricate for practical reasons.
+
+\item The strength of memristors is exactly the weakness of soens: memristors can be made very small.
+
+\item It may be helpful to have metaplastic neuromodulatory control, so a region of synapses can adapt more or less rapidly at various times. With the circuit approach this can be accomplished by varying common current or voltage biases. Is there an analogous mechanism for memristors? Can you change their rate of adaptation collectively, not based on their individual history of activity, but by other mechanisms based on network activity across larger regions?
+
+
+
+\end{itemize}
 
 \section{\label{sec:transmitters}Transmitter driver circuits}
 
