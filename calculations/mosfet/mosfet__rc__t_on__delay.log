@@ -1,0 +1,31 @@
+Circuit: * C:\Users\jeffr\Documents\a4\git_repos\olmec\calculations\mosfet\mosfet__rc__t_on__delay.asc
+
+WARNING: Node N003 is floating.
+WARNING: Node N004 is floating.
+WARNING: Node N002 is floating.
+WARNING: Node N006 is floating.
+
+Model "soen_nmos": Oxide thickness thinner than recommended for a level 2 MOSFET.
+Instance "m4": Length shorter than recommended for a level 2 MOSFET.
+Instance "m3": Length shorter than recommended for a level 2 MOSFET.
+Instance "m2": Length shorter than recommended for a level 2 MOSFET.
+Instance "m1": Length shorter than recommended for a level 2 MOSFET.
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Nov 19 16:08:44 2020
+Total elapsed time: 0.160 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 42208
+traniter = 42178
+tranpoints = 10277
+accept = 7926
+rejected = 2351
+matrix size = 12
+fillins = 2
+solver = Normal
+Matrix Compiler1: 918 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+

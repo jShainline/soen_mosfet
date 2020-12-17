@@ -1,0 +1,43 @@
+Circuit: * C:\Users\jeffr\Documents\a4\olmec\calculations\mosfet\nmos_IV_sweep.asc
+
+Limiting fall time of source v1 to 1.9984e-016
+WARNING: Node N002 is floating.
+
+Model "soen_nmos": Oxide thickness thinner than recommended for a level 2 MOSFET.
+Instance "m2": Length shorter than recommended for a level 2 MOSFET.
+Instance "m2": Width narrower than recommended for a level 2 MOSFET.
+Direct Newton iteration for .op point succeeded.
+.step v2=0.7
+.step v2=0.8
+.step v2=0.9
+.step v2=1
+.step v2=1.1
+.step v2=1.2
+.step v2=1.3
+.step v2=1.4
+.step v2=1.5
+.step v2=1.6
+.step v2=1.7
+.step v2=1.8
+.step v2=1.9
+.step v2=2
+.step v2=2.1
+.step v2=2.2
+
+Date: Tue Dec 15 13:50:36 2020
+Total elapsed time: 0.566 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2185
+traniter = 2179
+tranpoints = 1058
+accept = 1054
+rejected = 4
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1:      11 opcodes  0.1/[0.0]/0.0
+Matrix Compiler2:      34 opcodes  0.0/[0.0]/0.0
+

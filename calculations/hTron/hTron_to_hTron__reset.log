@@ -1,0 +1,37 @@
+Circuit: * C:\Users\jeffr\Documents\a4\olmec\calculations\hTron_to_hTron__reset.asc
+
+Questionable use of curly braces in "b4 0 n001  i={1.103*{isw}*(1-(v(t_es)/{tc})**3)**2.1}"
+    Error: undefined symbol in: "1.103*(isw)*(1-([v](t_es)/(tc))**3)**2.1"
+Questionable use of curly braces in "b4 0 n001  i={1.103*{isw}*(1-(v(t_es)/{tc})**3)**2.1}"
+    Error: undefined symbol in: "1.103*(isw)*(1-([v](t_es)/(tc))**3)**2.1"
+WARNING: Node X1:T_ES is floating and connected to current source B:X1:_EPHS2.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X1:T_EH is floating and connected to current source B:X1:_EPHH1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X1:T_PHH is floating and connected to current source B:X1:_HD1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X1:T_D is floating and connected to current source B:X1:_DS1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X1:T_PHS is floating and connected to current source B:X1:_EPHS1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_ES is floating and connected to current source B:X2:_EPHS2.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_EH is floating and connected to current source B:X2:_EPHH1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_PHH is floating and connected to current source B:X2:_HD1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_D is floating and connected to current source B:X2:_DS1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_PHS is floating and connected to current source B:X2:_EPHS1.  It's .op solution is defined solely by a .ic statement.
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Dec 15 10:54:51 2020
+Total elapsed time: 74.330 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7648451
+traniter = 7648448
+tranpoints = 1814945
+accept = 1368457
+rejected = 446488
+matrix size = 36
+fillins = 7
+solver = Normal
+Thread vector: 12.7/4.6[3] 1.0/0.7[3] 2.1/0.9[3] 0.1/0.4[1]  2592/500
+Matrix Compiler1: 2.01 KB object code size  0.3/0.2/[0.1]
+Matrix Compiler2: 2.54 KB object code size  0.1/0.3/[0.1]
+

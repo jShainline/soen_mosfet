@@ -1,0 +1,27 @@
+Circuit: * C:\Users\jeffr\Documents\a4\git_repos\olmec\calculations\mosfet\mosfet__rc__t_on__reset.asc
+
+WARNING: Node N002 is floating.
+WARNING: Node N003 is floating.
+
+Model "soen_nmos": Oxide thickness thinner than recommended for a level 2 MOSFET.
+Instance "m2": Length shorter than recommended for a level 2 MOSFET.
+Instance "m1": Length shorter than recommended for a level 2 MOSFET.
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Nov 19 14:56:01 2020
+Total elapsed time: 0.091 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 6542
+traniter = 6512
+tranpoints = 2069
+accept = 1809
+rejected = 260
+matrix size = 8
+fillins = 0
+solver = Normal
+Matrix Compiler1: 362 bytes object code size  0.1/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.1/0.1
+

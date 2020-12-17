@@ -1,0 +1,24 @@
+
+*------------
+* transistors
+*------------
+
+* transistor model, largely from Van Zeghbroeck's book
+*.model soen_nmos NMOS(LEVEL=2 L=1u W=1u VTO=0.37 KP=8.64E-6 NSUB=1E16 TOX=20n U0=1200)
+
+* this version same as above but with shift of VTO to capture low-temp behavior according to Bryce
+*.model soen_nmos NMOS(LEVEL=2 L=1u W=1u VTO=0.7 KP=8.64E-6 NSUB=3E16 TOX=20n U0=1200)
+.model soen_nmos NMOS(LEVEL=2 L=1u W=1u VTO=0.86 KP=8.64E-6 NSUB=5E16 TOX=20n U0=1200)
+
+* this doesnt work, but has a lot of parameters
+* .model soen_nmos NMOS(Rg=3.5 Rd=1.2m Rs=800u lambda=0.00001 Vto=-0.8 Kp=280 Cgdmax=10.0f Cgdmin=1.0f Cgs=1f Cjo=1f Is=5p Rb=3m mfg=nist_phi)
+
+
+*------------
+* diodes
+*------------
+
+*.model soen_led D(IS=5.236e-23 RS=10k N=1 TT=0 CJO=0.1f Eg=1.11)
+
+* this one from Bryce
+.model soen_led D(Is=169p Rs=14667 N=3.67 type=LED)

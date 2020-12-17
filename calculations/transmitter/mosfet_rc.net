@@ -1,0 +1,15 @@
+* C:\Users\jeffr\Documents\a4\git_repos\olmec\calculations\transmitter\mosfet_rc.asc
+V2 ds 0 3
+V3 Vg N003 PWL(0ns 0V 9.9ns 0 10ns 1.3V 49.9ns 1.3V 50ns 0V)
+M1 ds Vg rc N001 soen_nmos l=1u w=10u
+C1 rc N002 500f
+R1 0 rc 2e5
+V1 N002 0 0
+V4 N003 0 0
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\jeffr\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 100n
+.lib C:\Users\jeffr\Documents\a4\git_repos\olmec\calculations\model.lib
+.backanno
+.end

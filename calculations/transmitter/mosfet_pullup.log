@@ -1,0 +1,52 @@
+Circuit: * C:\Users\jeffr\Documents\a4\git_repos\olmec\calculations\transmitter\mosfet_pullup.asc
+
+WARNING: Node N001 is floating.
+WARNING: Node N002 is floating.
+
+Model "soen_nmos": Oxide thickness thinner than recommended for a level 2 MOSFET.
+Instance "m2": Length shorter than recommended for a level 2 MOSFET.
+Instance "m1": Length shorter than recommended for a level 2 MOSFET.
+Direct Newton iteration for .op point succeeded.
+Heightened Def Con from 9.40338e-009 +++++++++++++to 9.40338e-009
+Heightened Def Con from 9.40338e-009 ++++++++++++++++++to 9.50106e-009
+Heightened Def Con from 3.67547e-008 to 3.67547e-008
+Heightened Def Con from 3.67547e-008 ++++++++++++to 3.67562e-008
+Heightened Def Con from 3.71227e-008 ++++++++++++to 3.71242e-008
+Heightened Def Con from 3.7321e-008 ++++++++++to 3.7321e-008
+Heightened Def Con from 3.7321e-008 ++++++++++++to 3.73225e-008
+Heightened Def Con from 3.7572e-008 ++++++++++++to 3.75735e-008
+Heightened Def Con from 3.77713e-008 ++++++++++++to 3.77728e-008
+Heightened Def Con from 3.79266e-008 ++++++++++++to 3.79282e-008
+Heightened Def Con from 3.81238e-008 ++++++++++++to 3.8124e-008
+Heightened Def Con from 3.83506e-008 to 3.83506e-008
+Heightened Def Con from 3.83506e-008 ++++++++++++to 3.83507e-008
+Heightened Def Con from 3.8514e-008 to 3.8514e-008
+Heightened Def Con from 3.8514e-008 ++++++++++++to 3.85142e-008
+Heightened Def Con from 3.86331e-008 ++++++++to 3.86331e-008
+Heightened Def Con from 3.86331e-008 +++++++++++++to 3.86346e-008
+Heightened Def Con from 3.88756e-008 +++++++++++++to 3.88772e-008
+Heightened Def Con from 3.93101e-008 +++++++++++++to 3.93116e-008
+Heightened Def Con from 3.94978e-008 +++++++++++++to 3.94993e-008
+Heightened Def Con from 3.97828e-008 +++++++++++++to 3.9783e-008
+Heightened Def Con from 3.99388e-008 +++++++++++++to 3.9939e-008
+Heightened Def Con from 4.00763e-008 +++++++++++++to 4.00763e-008
+Heightened Def Con from 4.00763e-008 ++++++++++++++to 4.00779e-008
+Heightened Def Con from 4.02856e-008 ++++++++++++++to 4.02871e-008
+
+Date: Thu Nov 19 13:31:19 2020
+Total elapsed time: 0.194 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 46560
+traniter = 46535
+tranpoints = 6115
+accept = 2634
+rejected = 3782
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1: 480 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+

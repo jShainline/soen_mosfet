@@ -1,0 +1,29 @@
+Circuit: * C:\Users\jeffr\Documents\a4\olmec\calculations\hTron_test.asc
+
+Questionable use of curly braces in "b4 0 n001  i={1.103*{isw}*(1-(v(t_es)/{tc})**3)**2.1}"
+    Error: undefined symbol in: "1.103*(isw)*(1-([v](t_es)/(tc))**3)**2.1"
+WARNING: Node X2:T_ES is floating and connected to current source B:X2:_EPHS2.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_EH is floating and connected to current source B:X2:_EPHH1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_PHH is floating and connected to current source B:X2:_HD1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_D is floating and connected to current source B:X2:_DS1.  It's .op solution is defined solely by a .ic statement.
+WARNING: Node X2:T_PHS is floating and connected to current source B:X2:_EPHS1.  It's .op solution is defined solely by a .ic statement.
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Dec 15 10:16:56 2020
+Total elapsed time: 0.610 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 60450
+traniter = 60447
+tranpoints = 30133
+accept = 30103
+rejected = 30
+matrix size = 16
+fillins = 3
+solver = Normal
+Matrix Compiler1: 794 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 1.07 KB object code size  0.1/0.1/[0.1]
+

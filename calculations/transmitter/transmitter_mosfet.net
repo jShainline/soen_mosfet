@@ -1,0 +1,34 @@
+* C:\Users\jeffr\Documents\a4\olmec\calculations\transmitter\transmitter_mosfet.asc
+R1 N009 N013 R=V(V_h)+1e-6
+R2 led N009 10k
+L1 N013 0 10n
+V1 V_h 0 PWL(0 0 4.9n 0 5n 10k)
+R3 0 V_h 1
+V2 N004 0 2
+M1 Vg_m2 N009 0 N010 soen_nmos l=1u w=10u
+D1 led 0 soen_led
+R4 N001 N002 500k
+C1 0 N006 1p
+M3 N007 N006 0 NC_01 soen_nmos l=1u w=10u
+C2 N014 0 10p
+R7 N003 N014 1k
+R8 N004 Vg_m2 300k
+M2 N005 Vg_m2 0 NC_02 soen_nmos l=1u w=10u
+R6 N006 N005 100
+M4 N008 N007 0 N011 soen_nmos l=1u w=10u
+M5 N002 N008 0 N012 soen_nmos l=1u w=10u
+R5 N004 N005 300k
+R9 N004 N007 300k
+R10 N004 N008 300k
+V3 N001 0 4
+R11 N002 N003 500k
+L2 N003 N009 100n
+.model D D
+.lib C:\Users\jeffr\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\jeffr\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.mos
+.lib C:\Users\jeffr\Documents\a4\calculations\spice_models\model.lib
+.tran 0 200n 0
+.backanno
+.end
