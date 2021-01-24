@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  8 DEC 2020 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  13 JAN 2021 14:57
 entering extended mode
 **./ss_comparison__jms_notes.tex
 (ss_comparison__jms_notes.tex
@@ -301,14 +301,14 @@ LaTeX Font Info:    ... okay on input line 49.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -342,95 +342,53 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fc-english.def
 File: fc-english.def 2016/01/12
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
 
  (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
 
 
 (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(ss_comparison__jms_notes.toc
-Underfull \hbox (badness 1769) in paragraph at lines 17--17
- \OT1/cmr/bx/n/10 con-sid-er-a-tions (in-clud-ing fab-ri-ca-tion and 
- []
-
-)
+(ss_comparison__jms_notes.toc)
 \tf@toc=\write3
 \openout3 = `ss_comparison__jms_notes.toc'.
 
- [1{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+ [1
 
+{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-[]\OT1/cmr/m/n/10 synaptic weights and sub-se-quent pro-cess-
  []
 
-
-Underfull \hbox (badness 7291) in paragraph at lines 88--89
-\OT1/cmr/m/n/10 ing/computation is per-formed en-tirely in the
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 88--89
-\OT1/cmr/m/n/10 elec-tronic do-main; light is used ex-clu-sively for
- []
-
-
-Underfull \hbox (badness 1043) in paragraph at lines 94--95
-[]\OT1/cmr/m/n/10 in the semi case, pho-tode-tec-tors are waveguide-
- []
-
-[2]
-Underfull \hbox (badness 7379) in paragraph at lines 126--126
-[][]\OT1/cmr/bx/n/14.4 Interconnection net-work and
- []
-
-[3]
-<photon_V_BW.png, id=26, 631.35875pt x 444.66125pt>
+[4] [5] [6]
+<photon_V_BW.png, id=36, 631.35875pt x 444.66125pt>
 File: photon_V_BW.png Graphic file (type png)
 <use photon_V_BW.png>
-Package pdftex.def Info: photon_V_BW.png  used on input line 214.
+Package pdftex.def Info: photon_V_BW.png  used on input line 285.
 (pdftex.def)             Requested size: 244.69386pt x 172.33836pt.
-<Temp_Photon_spike.png, id=28, 631.35875pt x 444.66125pt>
+<Temp_Photon_spike.png, id=38, 631.35875pt x 444.66125pt>
 File: Temp_Photon_spike.png Graphic file (type png)
 <use Temp_Photon_spike.png>
-Package pdftex.def Info: Temp_Photon_spike.png  used on input line 222.
+Package pdftex.def Info: Temp_Photon_spike.png  used on input line 293.
 (pdftex.def)             Requested size: 244.69386pt x 172.33836pt.
- [4 <./photon_V_BW.png>]
-Underfull \hbox (badness 1596) in paragraph at lines 278--278
-[][]\OT1/cmr/bx/n/14.4 Power con-sump-tion, cool-ing,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./Temp_Photon_spike.png>]
-Underfull \vbox (badness 1997) has occurred while \output is active []
-
-
-(ss_comparison__jms_notes.bbl
-Underfull \hbox (badness 1694) in paragraph at lines 16--21
-[]\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
- []
-
-) [6] (ss_comparison__jms_notes.aux)
+ [7 <./photon_V_BW.png>] [8 <./Temp_Photon_spike.png>]
+(ss_comparison__jms_notes.bbl [9]) [10] (ss_comparison__jms_notes.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5793 strings out of 481225
- 86670 string characters out of 2906175
- 351752 words of memory out of 3000000
- 21285 multiletter control sequences out of 15000+200000
+ 5792 strings out of 481225
+ 86652 string characters out of 2906175
+ 346774 words of memory out of 3000000
+ 21284 multiletter control sequences out of 15000+200000
  544933 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,77p,1690b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,6n,77p,1690b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\jeffr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -449,9 +407,9 @@ ublic/amsfonts/cm/cmr8.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/jeffr/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ss_comparison__jms_notes.pdf (6 pages, 269641 bytes).
+Output written on ss_comparison__jms_notes.pdf (10 pages, 279566 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
+ 105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

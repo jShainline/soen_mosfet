@@ -1,4 +1,4 @@
-\documentclass[twocolumn]{article}
+\documentclass[onecolumn]{article}
 
 \usepackage{geometry}
 \geometry{textwidth = 18cm,textheight = 24cm}
@@ -48,18 +48,12 @@
 
 \begin{document}
 
-\twocolumn[
-  \begin{@twocolumnfalse}
-    \maketitle
-    \begin{abstract}
-
-    \vspace{3em}
-    \end{abstract}
-  \end{@twocolumnfalse}
-]
+\maketitle
+\begin{abstract}
+\vspace{3em}
+\end{abstract}
 
 %\keywords{neural systems, neuromorphic computing, artificial intelligence, semiconductor devices, superconductor devices}
-
 	
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{4}
@@ -114,6 +108,81 @@ It is our intention instead to assess whether superconducting optoelectronic neu
 
 This work is largely motivated by a scientific question, albeit one with potentially significant technological ramifications: is it possible to construct an apparatus as generally intelligent as a human being? Going one step further, what are the physical limits of cognitive intelligence?
 
+\section{Key Takeaway Messages}
+\begin{itemize}
+
+\item With light for communication as an assumption, we can converge for both systems to a coarse description that appears feasible:
+\begin{itemize}
+\item wafer-scale processing
+\item multiplanar waveguides across wafers
+\item free-space vertical links
+\item fluid cooling between wafers
+\item fiber-optic white matter over longer distances
+\item modular, hierarchical construction over spatial and temporal scales limited by the light cone
+\end{itemize}
+
+\item System power required for cryogenic cooling even for a system at rest dictates that superconducting systems will not be more energy efficient than semiconductor systems until a certain scale, roughly the scale at which semiconductor systems dissipate a few hundred watts. This is not edge. It is neuromorphic supercomputing. Crossover is probably around 10$^6$ neurons. Include crossover plot.
+
+\item Assuming area is limited by wgs, need roughly 20 planes of waveguides. This is a necessary demonstration for either platform to be valid.
+
+\item with 20 wg planes of passive waveguides, the situation is significantly improved if photodetectors (diodes or spds) can be integrated with these planes so the synaptic processing can be distributed over the planes instead of residing in a single 2D plane on the substrate. This achieves roughly $20\,\times$ increase in the number of synapses that can be accommodated on a wafer. Multiple planes of waveguides with integrated detectors are a necessary demonstration for poth platforms.
+
+\item In addition to detectors, computational circuits associated with synapses must be spread across multiple planes. Neurons and associated transmitter circuits are far less numerous than synapses, so all neural firing circuits may exist on a single plane, such as the crystalline body silicon of an SOI wafer. But because synapses are far more numerous, and learning/plasticity circuits are not particularly small, electrical circuitry associated with synaptic and dendritic processing must be interspersed with photonic waveguides to fill space in the third dimension above the waver surface. Multiple planes of synaptic circuitry must be demonstrated for both hardware platforms.
+
+\item Power density will be low enough to be removed by water or He at wafer scale, module, up the hierarchy. Volume must be available for grey matter, white matter, and cooling fluid.
+
+\item For semi PD to compete with snspd, receiverless, 200\,aF links are required. This is an element that must be demonstrated.
+
+\item Based on noise considerations on PD at 300\,K, $>\,10^3$ photons are required to be received during a synapse event, as compared to 1 in the spd case. The associated demands on the light source and transmitter driver circuits are correspondingly increased. This means that to fire at the same rate, the semi neuron axon hillock would need to produce roughly 1000$\,\times$ the number of photons as the super case to achieve a snr of 1. By contrast, snspds don't have current or voltage noise in the same sense. (begs further noise analysis (god, it never ends))
+
+\item Regarding light sources, these demands require sources with high efficiency (including coupling and propagation loss) being driven with high current. Demonstration of light sources and driver circuits with sufficient output and wafer scale integration ($10^6 - 10^7$ sources per 300-mm wafer) is a necessary demonstration.
+
+\item These integration requirements sketch the process stack to be pursued in each case
+\begin{itemize}
+\item semi: one plane mosfets and light sources for transmitters, $N$ superplanes interspersing passive waveguides, poly-si pds, poly-si mosfets for synapses, and mos capacitors for time constants. synaptic  poly-si pds and mosfets require high-temp dopant drive in, so it is unlikely these would be processed after integration with light sources. wafer bonding of synapses and interconnects to neuron transmitter circuits appears likely. potentially an expensive step.
+\item super: one plane mosfets and/or hTrons and light sources (potentially silicon, monolithic with mosfets) and $N$ superplanes of passive waveguides, snspds, jjs and inudctors (mutual and kinetic). here, no high temperatures are requried to activate dopants or form ohmic contacts, so these layers could potentially be integrated on wafers with driver circuits and light sources monolithically without the need for wafer bonding. 
+\end{itemize}
+
+\item Due to num photons requirements, it is difficult for semi systems to fire much faster than 20\,MHz due to the requirements of the transmitter circuit and light sources to provide photons to all synapses.
+
+\item (aside: what is the total current delivered to each system to drive the light sources?)
+
+\item Memory
+\begin{itemize}
+\item for semi, floating gate mosfet would be ideal, but has proven difficult. signals necessary to change charge on gate are not the same as the signals typically sent from neurons to synapses. Numerous other devices are being investigated, but a compelling case remains to be made that any of these can rival the adaptation mechanisms supporting learning in the brain. New advances must be made for short-term, long-term, meta, and homeostatic plasticity.
+\item for super, plasticity appears straightforward through adaptive flux storage loops coupled to biases of squids in synaptic and dendritic receivers. However, these circuits have only been shown in theory and simulations. experimental demonstrations are necessary. further, the circuits are large, and must be packed densely. it must be demonstrated that this dense, multiplanar packing of coupling circuits through transformers is possible with low cross talk between flux-storage loops.
+\end{itemize}
+
+\item in neither the semi or super case is a state-of-the-art technology node required. 45\,nm lithography will suffice for either approach.
+
+\end{itemize}
+
+\vspace{3em}
+
+Summary of demonstrations required of each hardware platform if brain-scale neuromorphic systems are to be feasible.\newline
+
+Necessary semiconductor demonstrations:
+\begin{itemize}
+\item Wafer-scale integration of $\sim\,20$ planes back-end-of-line passive dielectric photonic waveguides with $\le\,3$\,dB propagation loss from any neuron to any other
+\item Integration of multiple planes of photodiodes integrated with low-loss dielectric waveguides (i.e., SiN waveguides evanescently coupled to aSi photodiodes)
+\item Integration of multiple planes of mosfets and capacitors performing synaptic computations, plasticity functions, and dendritic processing
+\item Receiverless photodetectors with $\mathcal{O}$(200\,aF) capacitance
+\item Wafer-scale integration of $10^6$ light sources and driver circuits producing $10^6$ photons within 50\,ns
+\item New advances must be made for short-term, long-term, meta, and homeostatic plasticity
+\end{itemize}
+
+\vspace{2em}
+Necessary superconductor demonstrations:
+\begin{itemize}
+\item Wafer-scale integration of $\sim\,20$ planes back-end-of-line passive dielectric photonic waveguides with $\le\,3$\,dB propagation loss from any neuron to any other
+\item Integration of multiple planes of snspds integrated with low-loss dielectric waveguides (i.e., SiN waveguides evanescently coupled to snspds operating at the correct temperature)
+\item Integration of multiple planes of jjs and mutual inductors performing synaptic computations, plasticity functions, and dendritic processing
+\item Wafer-scale integration of $10^6$ light sources and driver circuits producing $10^4$ photons within 50\,ns
+\item Experimental demonstrations must be made for short-term, long-term, meta, and homeostatic plasticity circuits (multiplanar with low cross talk and sufficiently small area to not dominate total system size)
+\end{itemize}
+
+
+
 \section{\label{sec:neural_device_requirements}Device requirements for neuromorphic systems}
 \begin{itemize}
 \item synaptic
@@ -149,7 +218,7 @@ Important section.
 \noindent quantum efficiency: $\eta = \frac{I_p/q}{P_{op}/(hc/\lambda)} = \frac{1.24R_{ph}}{\lambda} = \frac{1}{1+\tau_{r}/\tau_{nr}}$
 
 \vspace{2em}
-\noindent Receiver error rate: is Razavi's noise/error rate model correct for us? We need to pay special attention to two limiting cases: 1) a single spike is received after a long period of rest (string or zeros); and 2) a fast spike train is received (burst input) (one zero one zero ...) Compare Razavi's analysis to Bryce's calculation. 
+\noindent Receiver error rate: is Razavi's noise/error rate model correct for us? We need to pay special attention to two limiting cases: 1) a single spike is received after a long period of rest (string of zeros); and 2) a fast spike train is received (burst input) (one zero one zero ...) Compare Razavi's analysis to Bryce's calculation. 
 
 Here's Bryce's calculation:
 
