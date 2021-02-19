@@ -45,12 +45,19 @@ A_syn = w_syn__vec**2
 N_syn = A_8/A_syn
 
 fig, ax = plt.subplots(1,1, figsize = (14,10))
-color_list = ['blue3','green3','yellow3']
-plt.suptitle('fraction of possible synaptic connections versus width of synapse\nsingle plane of active devices')
+plt.suptitle('fraction of possible synaptic connections versus width of synapse')
+
+color_list = ['blue1','green1','yellow1']
 for ii in range(len(N_n__list)):
     k_out = N_syn/N_n__list[ii]
     k_frac = N_n__list[ii]*k_out/(N_n__list[ii]**2) # fraction of possible synaptic connections
-    ax.loglog(w_syn__vec*1e6,k_frac, '-', color = colors[color_list[ii]], label = 'N_n = {:4.2e}'.format(N_n__list[ii]))    
+    ax.loglog(w_syn__vec*1e6,k_frac, '-', color = colors[color_list[ii]], label = 'N_n = {:4.2e}, 1 plane'.format(N_n__list[ii]))  
+
+color_list = ['blue3','green3','yellow3']
+for ii in range(len(N_n__list)):
+    k_out = 10*N_syn/N_n__list[ii]
+    k_frac = N_n__list[ii]*k_out/(N_n__list[ii]**2) # fraction of possible synaptic connections
+    ax.loglog(w_syn__vec*1e6,k_frac, '-', color = colors[color_list[ii]], label = 'N_n = {:4.2e}, 10 planes'.format(N_n__list[ii]))     
 
 ax.grid('on')
 ax.set_xlim([w_syn__vec[0]*1e6,w_syn__vec[-1]*1e6])

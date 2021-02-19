@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {6}Detectors}{5}%
 \contentsline {subsection}{\numberline {6.1}Motivation}{6}%
 \contentsline {subsection}{\numberline {6.2}Photodetector Basics and Noise}{6}%
-\contentsline {subsection}{\numberline {6.3}Transimpedance amplifier}{7}%
-\contentsline {section}{\numberline {7}Synaptic circuits and weighting}{7}%
+\contentsline {subsection}{\numberline {6.3}Transimpedance amplifier}{8}%
+\contentsline {section}{\numberline {7}Synaptic circuits and weighting}{8}%
 \contentsline {section}{\numberline {8}Dendrites and fan-in}{8}%
 \contentsline {section}{\numberline {9}Neural integration and threshold}{8}%
 \contentsline {section}{\numberline {10}Synaptic, dendritic, and neuronal adaptation}{8}%
@@ -17,5 +17,5 @@
 \contentsline {section}{\numberline {13}Biasing}{9}%
 \contentsline {section}{\numberline {14}Power consumption, cooling, and system considerations (including fabrication and production)}{9}%
 \contentsline {section}{\numberline {15}Notes}{9}%
-\contentsline {section}{\numberline {16}Acknowledgements}{9}%
+\contentsline {section}{\numberline {16}Acknowledgements}{10}%
 \contentsline {section}{\numberline {A}Appendix One}{10}%

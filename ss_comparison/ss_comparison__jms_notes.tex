@@ -33,7 +33,7 @@
   \setlength{\itemsep}{0pt plus 0.3ex}
 }
   
-\title{Comparison of semiconducting and superconducting hardware for optoelectronic neuromorphic systems}
+\title{Considerations for brain-scale artificial neural systems in semiconducting and superconducting hardware}
 \author[1]{\Large{Bryce Primavera and Jeff Shainline}
 \\
 \textit{\large{National Institute of Standards and Technology}}
@@ -60,6 +60,13 @@
 \tableofcontents	
 	
 \section{\label{sec:introduction}Introduction}
+
+The speed of the cooling fluid is
+\begin{equation}
+s_{\mathrm{f}} = \frac{1}{d_{300}hmn}\frac{P}{C\Delta T},
+\end{equation}
+where $d_{300}$ is the diameter of a 300-mm wafer, $h$ is the gap between wafers, $m$ is the number of columns in a row of the cube, $n$ is the number of wafers stacked vertically in a column, $P$ is the total power dissipation of the wafers, $C$ is the heat capacity per unit volume, and $\Delta T$ is the temperature increase the wafers can endure.
+
 Lay out the problem: 
 \begin{itemize}
 \item objective: neuromorphic supercomputing, scale of human brain
