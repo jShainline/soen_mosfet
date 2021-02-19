@@ -1,0 +1,360 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{outlines}
+\title{Comparison of semiconductor and superconductor hardware for large-scale optoelectronic neural systems}
+\author{Bryce Primavera and Jeffrey Shainline}
+\date{August 2020}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction}
+
+\quad \quad Recent years have seen a surge of interest in neuromorphic computing. Major chip makers have begun development of low-power neuromorphic chips for near-term deployment in edge AI applications.\cite{merolla2014million, davies2018loihi} While the first practical applications for neuromorphic technology will be in small edge devices, the possibility of large-scale neuromorphic cognitive systems is tantalizing. Systems of such scale may be key to unraveling the mysteries of cognition, and some day might even be a platform for an artificial general intelligence that matches or even supersedes human capability.
+
+With such lofty goals, it should not be surprising that the hardware for massive cognitive systems will necessarily have significant deviations from current neuromorphic chips that target smaller scales. One of the most significant challenges in scaling up neuromorphic systems will be to design systems that efficiently enable the communication amongst billions or trillions of neurons with low latency. Most current neuromorphic systems use addressing of neurons as a way to time-multiplex spiking events amongst many neurons on to a small number of buses. This has been an extremely successful strategy and circumvents many of the physical issues that limit CMOS circuits to only a handful of outputs. In the near-term, addressed systems will continue to dominate the neuromorphic scene and their adaptability will continue to make them valuable tools for testing hypotheses from the neuroscience and computer science communities. However, multiplexing inherently introduces trade-offs between connectivity and latency. Our contention is that multiplexing will be an untenable solution for the largest possible cognitive systems.
+
+Optical communication is an intriguing solution to the neural connectivity problem. Many of the same properties that have made light the medium of choice for communication in the largest artificial network yet constructed - the internet - make it attractive for large-scale neural systems. Unlike electrons, photons do not interact strongly with each other. This allows for very low cross-talk and high fan-out. Additionally, waveguides and optical fibers enable low-loss communication up to the scale of meters. These are excellent properties for implementing communication in large-scale neural systems. 
+
+While the lack of interaction between photons is a benefit for communication, it is a negative for computation. This has led to the hypothesis that the largest cognitive systems will be optoelectronic - utilizing optics for communication and electronics for computation \cite{shainline2018largest}.
+
+A number of concepts for optoelectronic neuromorphic hardware have been proposed. In this paper, we will restrict ourselves to a comparison of only two classes of networks designed around three basic assumptions:
+
+\begin{enumerate}
+    \item Direct connections are superior to shared connections.
+    \item Optical communication should be binary.
+    \item All synaptic, dendritic, and somatic computations should be performed by electronic circuits.
+\end{enumerate}
+
+These three conditions follow from the principles already mentioned. Optical communication is attractive precisely because it eliminates the need for shared communication lines by allowing for neurons with high fan-out. This means there will be no performance bottlenecks associated with network traffic (latency is independent of network activity) and no overhead necessary to manage a massive address space (communication events do not require memory access). Additionally, when separate synapses are used for each connection, those synapses can be constructed with a wide variety of different properties. Creating many physical synapses for each neuron indeed costs substantial chip area, but in the supercomputing space that we are targeting, the physical size of the network is less important than in the mobile applications that are often discussed in the neuromorphic community. The second constraint concerning binary optical communication stems from the hypothesis that computation is best done in the electronic domain. This also minimizes the amount of optical energy necessary per spiking event. If electrical to optical conversion is costly, then binary optical communication will be the most efficient solution. Finally, implementing non-linear functions optically can be difficult, so it seems likely that majority of computation should be done in the electronic domain.
+
+With these general postulates established, a picture of the ideal hardware begins to emerge. There is a single optical transmitter at each neuron. This light emitter produces a short pulse of light each time the neuron spikes. The optical pulse is coupled into a waveguide and optical power is tapped off the waveguide for each downstream synapse. Each synapse contains a photodetector which registers an all or nothing spiking event. From there, all dendritic, weighting, summing, thresholding, and plasticity mechanisms are implemented in the electronic domain. 
+
+Following this model, a hardware platform known as SOENS (Superconducting OptoElectronic Networks) was proposed in 2016 \cite{shainline2017superconducting}. SOENS exploits several exciting physical devices that are only possible at low temperatures. Superconducting Nanowire Single Photon Detectors (SNSPDs) are efficient, low-power detectors that allow the optical pulses reaching each synapse to be as faint as a few photons. Superconducting Josephson Junctions (JJs) provide an electronic circuit element that can compactly implement a wide variety neuronal computations. Lastly, the low temperature operation also makes integrated silicon light sources a viable option. An integrated silicon light source would make the challenge of massive, wafer-level optoelectronic systems a much more realistic endeavour. 
+
+For all of its benefits, it is worth considering whether all of these exotic superconducting devices are truly superior to a more conventional semiconducting approach to optoelectronic neuromorphic hardware. The spirit of the hardware could potentially be preserved with a one-to-one replacement of each superconducting device with its semiconductor analogue. Photodiodes could substitute for the SNSPDs. MOSFETs could play the role of JJs in implementing neuronal computation. Intriguingly, photodiodes and MOSFETs have none of the cryogenic constraints of their superconducting counterparts. Semiconductor systems can be envisioned that operate at 4K, 77K, or even room-temperature. Candidates for integrated light sources are available at all three of these suggested temperatures. This approach also clearly benefits from decades of development that have made the semiconductor industry what it is today.
+
+This paper seeks to compare the suitability of semiconductor and superconductor platforms for implementing large-scale optoelectronic neuromorphic networks. Despite limiting our discussion only to platforms meeting our three assumptions, there is still a vast space of design choices, making it difficult to draw hard-and-fast conclusions. Nevertheless, some interesting results can be arrived at by analyzing the ultimate physical limits of devices in each platform and by identifying the various technologies that are most likely to play a role in each platform. Important benchmarks for device performance are also identified, which will hopefully be of use in monitoring the development of each platform in coming years. To make as accurate an assessment as is currently feasible, the two platforms are compared from a myriad of different viewpoints - computational ability, power consumption, feasibility of fabrication, and economic viability. 
+
+\section{Somatic Computation}
+\quad In most models of leaky integrate-and-fire neurons, the majority of a neuron's computational capabilities are implemented in the soma. At the most basic level, the soma must be capable of three mathematical functions: summation of synaptic signals, low-pass filtering, and threshold detection. Carver Mead recognized in the late 1980s that the simplicity of these functions lent themselves to efficient emulation by analog circuitry \cite{mead1990neuromorphic}. Each of the three core neuronal computations has a natural implementation in traditional semiconductor circuitry. For summation, Kirchoff's law provides a simple method to aggregate currents. Low-pass filtering can be implemented through elementary resistor-capacitor circuits. Thresholding behavior is similarly simple to implement through the switching properties of transistors. With these basic building blocks, a great variety of analog semiconductor neurons have been demonstrated to emulate a litany of biologically inspired neuronal models.
+
+Less well-known, however, is that there exists a similar mapping between these mathematical functions and superconducting circuitry. Mutual inductors can couple many synaptic currents into a single superconducting loop, providing an efficient and scalable implementation of the summation function. Low-pass filtering is likely to be achieved through inductor-resistor circuits instead of capacitive circuits, but the functionality remains unchanged. Lastly, thresholding can be efficiently reproduced by the switching of Josephson Junctions.  A summary of these mappings is shown in Table \ref{tab:mathtable}. Ref [phenomenological] provides a method for modelling superconducting neurons as systems of leaky integrators. This suggests that much of the dynamics demonstrated by CMOS neurons to date could also be implemented in the superconducting domain.
+
+\begin{table}[h!]
+  \begin{center}
+    \label{tab:mathtable}
+    \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      \textbf{Function} & \textbf{Semiconductors} & \textbf{Superconductors}\\
+      \hline
+      \textit{Summation} & Kirchoff's Law & Mutual Inductors\\
+      \textit{Low-Pass Filter} & RC Circuit & LR Circuit\\
+      \textit{Thresholding} & Transistors & Josepheson Junctions\\
+    \end{tabular}
+    \caption{Summary of implementations of basic neuronal functions in each platform.}
+  \end{center}
+\end{table}
+
+The fan-in of a neuron is defined as the number of synaptic connections entering the soma. In biology, fan-in can range from 1,000-10,000. Many research groups have exploited the linearity of optical signals to perform synaptic summation in the optical domain. However, this method conflicts with our postulate that optical communication should be binary and that all weighting operations should be performed in the electronic domain. With this restriction, fan-in must be achieved in the electronic domain. This certainly increases circuit footprint, but reduces the burden on the photonic devices and allows different time constants to be set for each synapse. In the semiconductor case, the limits of electrical fan-in has been estimated previously \cite{akima2014majority, dowrick2018fan}, and come to the conclusion that biological scale fan-in is a physical possibility. Similarly, an analysis of the limits of superconducting fan-in can be found in appendix C of [phenomenological], and reaches similar conclusions.
+
+It also seems likely that the power consumed in soma circuitry will be small compared to that necessary for optoelectronic communication (this will be discussed in the subsequent section) for both cases. For the semiconductor case, current from synaptic inputs charges a capacitance up to some threshold voltage that triggers the transmitter circuitry. There is energy associated with charging up this capacitance ($\frac{1}{2}CV^2$). The best way to reduce power consumption is then to lower both the capacitance and supply voltage of the neuron. Indeed, impressively low power circuits can be designed with standard fabrication processes. In reference \cite{sourikopoulos20174}, a 65nm CMOS neuron is found to consume 4fJ/spike while spiking at a frequency of 25 kHz. This is around three orders of magnitude lower energy than would be necessary for optical communication (discussed in the subsequent section). However, for neurons exhibiting very high fan-in, there will be significant parasitic capacitance associated with the wiring connecting each synapse to the soma. This increases the energy necessary to reach a given threshold voltage and also places limits on the maximum spiking frequency of a neuron. It is subsequently very unlikely that neurons of the variety discussed here could be constructed to operate in the GHz regime with fan-in in the thousands (see Appendix A). Despite this, it seems at least plausible that neurons operating in the MHz regime could be constructed with fan-in exceeding 1000 and that communication power would still dominate capacitive charging energy.
+
+In the superconductor case, the analogue of the membrane voltage is a current circulating in a superconducting loop. When this current reaches the critical current of a Josephson Junction in the loop, the junction will produce quantized voltage pulses that can drive optical transmitter circuitry (see Section 3). The equivalent of the membrane capacitance charging energy is the energy stored in the loop's inductance ($\frac{1}{2}LI^2$). Just as in the semiconductor case, this stored energy must be dissipated. The energy stored in superconducting inductive loops will also likely always be significantly less than the energy used in communication circuitry. Driving the transmitter circuitry will likely require no more than 10 fJ of energy (including cooling) out of the loop, and the energy associated with the inductance of the wiring is likely to be less than this value by at least an order of magnitude (Appendix A).
+
+\section{Communication}
+\subsection{Optical Receivers}
+\quad \quad The receiver is a natural place to begin analyzing the power consumption of an optical interconnect. There are two ways that the receiver influences the power budget of an optical interconnect: (1) The receiver (and the electrical components it must drive) sets the minimum optical signal that needs to be produced by the light source to send a spike and (2) the receiver may require electrical power of its own to run. In the following section, we compare SOENS receivers \cite{shainline2019superconducting} to those most likely to be implemented in all-semiconductor approach to optoelectronic neuromorphic computing.
+
+\subsubsection{SOENS Receivers}
+\quad \quad As stated previously, the SOENS platform utilizes Superconducting Nanowire Single Photon Detectors (SNSPDs) to detect optical signals as low as a single photon. An SNSPD is nothing more than a superconducting nanowire biased with some current on the order of 1$\mu A$. This makes SNSPD fabrication and wavguide integration simple. A single photon incident on the nanowire has enough energy to force the nanowire to transition from the superconducting phase to a resistive state on the order of 1k$\Omega$. This diverts the bias current ($I_{spd}$) from the SNSPD into a lower resistance path which is inductively coupled to a superconducting loop called the dendritic receiving loop. The current in the DR loop can then be processed with analog Josephson electronics to emulate neuronal dynamics. This will be discussed in greater detail in later sections.
+
+This superconducting receiver dissipates zero static energy. However, there is an electrical energy cost associated with detecting a photon. The nanowire has some inductance, $L_{spd}$ that stores energy from the current bias. During a detection event, this energy is released from $L_{spd}$ and dissipated in the resistor $r_{spd}$. The electrical energy necessary to detect each photon ($E_{spd}$) is then $\frac{1}{2}L_{spd}(I_{spd})^2$. $L_{spd}$ can be as low as 100nH, resulting in an additional energy consumption of around 10aJ/spike.
+
+While an SNSPD is capable of detecting single photons, the minimum optical energy per spike is limited by random optical shot noise. The minimum number of photons for a shot noise limited detector is often calculated in standard optical communications texts. We will assume that detecting a single photon is sufficient for the SNSPD to register a spike. The probability of a light source producing a spike with a certain number of photons in a given time window is given by a Poisson distribution. We will also conservatively assume a detection efficiency $\eta_D$ of 70\%.
+
+The probability of measuring zero photons during a spiking event is then given by: \newline
+
+\begin{equation}
+    P(0) = \sum_{k=0}^{\infty} \frac{N_{ph}^k e^{-N_{ph}}}{k!}(1-\eta_D)^{k} = e^{-N_{ph}\eta_D}
+\end{equation}
+
+$N_{ph}$ is the average number of photons per spiking event. Neural systems are known for remarkable robustness to noise. Detecting only 99\% of spikes may be tolerable. From equation 1, this would correspond to roughly 7 photons (0.9 aJ for $\lambda = 1.5$ um) needed to reach the receiver. Of course, the total number of photons produced by the source will need to be higher to account for energy losses in the link. The total optical energy per spike, $E_{opt}$, will be:
+
+\begin{equation}
+    E_{opt} = \frac{N_{ph} h c}{\eta\lambda}
+\end{equation}
+
+$\eta$ is the total energy efficiency of the optical link. It includes all optical losses and the inefficiency of the light source. This efficiency factor will be highly dependent on the specifics of the platform, but for now we will leave it as a free variable.
+
+The total power consumed is the sum of $E_{opt}$ and $E_{spd}$. Accepting a 1\% error rate, these two contributions to the total energy will be roughly equal when $\eta = 10\%$. Such a high efficiency is likely to be higher than even what can be achieved with III/V integration. For more realistic values of $\eta$, $E_{opt}$ will dominate.
+
+\subsubsection{Semiconductor Receivers}
+\quad \quad There are a variety of possible designs for semiconductor optical receivers. Avalanche photodiodes represent the closest analogue to SNSPDs, as they can also detect single photons. However, avalanche photodiodes typically require high reverse biases, driving up the energy cost to run them. Instead, most optical communication systems today use a p-i-n photodiode in conjunction with a trans-impedance amplifier (TIA). However, most TIAs also require unacceptable levels of static power dissipation for neuromorphic applications. This has led groups interested in low power optical interconnects to reject modern TIA designs and opt for a simple design where the optical energy directly charges the photodiode capacitance to a voltage capable of driving a MOSFET with no intermediate stage \cite{miller2017attojoule}. This "receiverless" design requires very low capacitance and very tight integration with surrounding circuitry 
+
+\section{Synaptic Memory}
+It has been apparent to the neuromorphic community for some time that large-scale neural systems will require innovative approaches to synaptic memory. Many modern CMOS neuromorphic systems use bias generators and digital memory to store and control synaptic parameters. While bias generator circuits are valuable for smaller-scale networks, static power consumption, analog-digital conversion, interconnect charging energy, and inconvenient non-local plasticity updates will make them untenable for larger networks \cite{dalgaty2019hybrid}. These issues have led to a widespread exploration of emerging memory technologies for neuromorphic computing. Extensive investigation is still needed to determine which technology will prove best-suited for large-scale neural systems. However, there are numerous desired characteristics that guide the development of synaptic memories. Among these metrics are weight precision, volatility, area, endurance (the effective number of cycles in device's lifetime), device-to-device and cycle-to-cycle variability, material compatibility, update symmetry and linearity, write speed, and switching energy. We attempt to provide desired benchmarks of a few of these metrics for the specific case of optoelectronic networks.
+\subsection{Memory Benchmarks}
+\subsubsection{Endurance}
+The large-scale cognitive systems discussed here could be used in at least two different modes. The first is to serially process many separate user-defined tasks over their lifetimes, similar to how modern supercomputers are used. The second is a lifelong learning approach, where the system's weights are allowed to naturally evolve over the course of its operating life, with no interference from users after initialization. In either of these modes, it will be vital that the synaptic weights can be changed throughout the lifetime of the system. This stands in contrast to many edge systems, where inference is a primary (or even sole) mode of operation. Additionally, edge systems will be much less costly to replace, making shorter lifetimes acceptable. Massive neural systems, carrying with them a correspondingly massive investment, will be desired to have lifetimes on the scale of decades ($10^9$ seconds).
+
+The number of times a synapse is updated in its lifetime is a function of neuron spiking frequency ($f$) and the number of synapses that are typically updated after each postsynaptic spike. In neuroscience literature, it has been found that the number of active presynaptic inputs required to trigger a postsynaptic spike roughly goes as $\sqrt{N}$, where $N$ is the fan-in of the neuron - perhaps 1,000 for brain-like systems. If we assume that only those active synapses are updated with each spike, the number of weight updates ($N_{updates}$) in the system's lifetime ($L$) will be:
+
+\begin{equation}
+    N_{updates} = \frac{Lf}{\sqrt{N}}
+\end{equation}
+
+For a decades-long lifetime, and a mean spiking frequency of around 10 kHz, the total number of weight updates will be around $10^{11}$. This is a challenging demand, but has been demonstrated in state-of-the-art memristive and phase change memory (PCM) devices \cite{zhao2020reliability}.
+
+\subsubsection{Update Energy}
+
+Additionally, it would be desirable if the power dedicated to weight updates were negligible compared to power used for optical communication. Once again invoking the assumption that $\sqrt{N}$ synapses are updated with each postsynaptic spike, we arrive at following relation between the energy to produce a single spike ($E_{spike}$) and that to update a single weight ($E_{update}$)
+
+\begin{equation}
+    E_{update} \leq \sqrt{N}E_{spike}
+\end{equation}
+
+Using the analysis in section 2, roughly 10 fJ of energy needs to be delivered to the reciever in either platform. Assuming a transmitter efficiency of 1\%, this would mean $E_{spike}$ is roughly 1 pJ. Therefore, for a fan-in of 1,000 synapses, $E_{update}$ would ideally be no more than 30 pJ. Note that this value also includes any energy spent in peripheral circuitry to program the synapse.
+
+\subsubsection{Area}
+The size of optoelectronic synapses will be limited by the size of optical components, which is mostly fixed by the wavelength of operation. Near infrared is the most reasonable wavelength to use for communication, given its compatibility with silicon photonics. In Appendix A, the minimum packing density of waveguides suggests that a neuron of fan-in of 1000 will require an absolute minimum of $80,000 \mu m^2$, or about $80 \mu m^2$ per synapse. In the superconducting case, synapses will likely be even larger. SNSPDs typically require relatively large inductors to set an appropriate recovery time. Such inductors may require upwards of 1,000 $\mu m^2$. These large (in comparison to all-electronic systems) areas suggest that memory density will not be a major factor in determining the optimal memory technology. This is a rather unique application in which memory technologies that were previously discarded as being too large for von Neumann computing may be tolerable. It must also be noted that these area estimates can be reduced if synapses can be constructed on multiple fabrication layers. Memory technologies that are compatible with 3D integration will be even more desirable in optoelectronic systems than in conventional electronic neuromorphic systems. The importance of 3D integration is explored more deeply in section $_$.
+
+\begin{table}[h!]
+  \begin{center}
+    \label{tab:mathtable}
+    \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      \textbf{Metric} & \textbf{Goal} \\
+      \hline
+      \textit{Endurance} & $>10^{11}$ updates \\
+      \textit{Update Energy} & $<$ 30 pJ\\
+      \textit{Update Speed} & $<100$ ns \\
+      \textit{Area} & $<100-1000$ $\mu m ^2$ \\
+      \textit{Weight Precision} & 4-10 bits \cite{pfeil20124}
+      
+    \end{tabular}
+    \caption{List of desired performance metrics for synaptic memory in a system with average fan-out of 1000, maximum spike rate of 10 MHz, average spike rate of 10 kHz, and spike energy of 10 fJ.}
+  \end{center}
+\end{table}
+\subsection{Proposed Technologies}
+\subsubsection{Room-temperature Technologies}
+
+Many different technologies have been proposed to implement synaptic weighting for room-temperature neuromorphic hardware. The quest to find a suitable device for local synaptic memory dates back to the origins of the field, when Carver Mead and his colleagues were investigating floating gate transistors \cite{diorio1998floating}. Since then, floating gate synapses have been used to implement STDP \cite{ramakrishnan2011floating} and are attractive as a mature alternative to emerging devices. However, there are concerns about high programming voltages, speed, and endurance that have made researchers turn to other technologies \cite{zahoor2020resistive}. RRAM has emerged as a promising alternative, with recent demonstrations including monolithic integration with CMOS \cite{yin2019monolithically} and unsupervised pattern recognition with a simple network of synapses \cite{ielmini2018brain}. However, questions remain about high variability (both cycle-to-cycle and device-to-device) \cite{dalgaty2019hybrid}, endurance, linearity, and the number of internal states \cite{zahoor2020resistive}. Phase Change Memory (PCM) is another intriguing option, with its own demonstration of STDP \cite{ambrogio2016unsupervised}, and is more mature than RRAM. Thermal management and energy consumption have been raised as issues \cite{upadhyay2019emerging, zahoor2020resistive}. Ferroelectric transistors present another interesting alternative, but likely require new materials. Spin-torque memory, 2D materials, and organic electronics have also been proposed as solutions. Interested readers should consult one of the many review articles on this topic \cite{kim2018recent, upadhyay2019emerging, zhang2020brain}. In short, the field is burgeoning with new devices for synaptic memory, but to-date none has been dominant enough to monopolize the market.
+
+\subsubsection{Superconducting Technologies}
+Many of the aforementioned technologies may also be operational at cryogenic temperatures for use in superconducting optoelectronic systems, but little work has been done in this regard. Instead, two other types of memory, only accessible at low temperatures, have received the most attention: Magnetic Josephson Junctions (MJJs) and superconducting loop memories. MJJs are extremely low-energy, non-volatile, two-terminal devices that are functionally analogous to many of the room-temperature memristive devices. Superconducting loop memories, on the other hand, are close analogues of floating gate transistors (with circulating current playing the role of trapped charge), but operate on completely different principles than any of the other memories mentioned.
+
+\subsubsection{MJJ}
+
+MJJs are formed by sandwiching an insulating barrier between two superconducting electrodes to create a Josephson Junction. If a ferromagnetic material is placed within the oxide, either in the form of nanoclusters or continuous films, the critical current of the junction can be controlled by changing the alignment of magnetic moments within the insulator. The magnetic order of the ferromagnetic materials can be programmed with current pulses in the presence of an external magnetic field, providing an analog, nonvolatile memory. For cryogenic memory, volatility takes on a slightly new meaning. For a memory to be nonvolatile in this context, it must preserve its state upon both the removal of electrical power and upon warming up to room temperature. MJJs provide remarkable synaptic performance in several areas. The synaptic update programming is on the order of femtojoules (including cooling), commensurate with firing rates exceeding 100 GHz, and can be fabricated at the scale of tens of nanometers. All of these metrics are far better than what is needed for optoelectronic networks, but can be exploited in all-electronic superconducting networks. More work is needed to analyze the scaling potential of MJJs. The magnetic fields used during programming can be produced with magnetic control lines, but spin-torque mechanisms may provide a more scalable solution. Peripheral circuitry involved in applying programming pulses also needs to be investigated. \cite{schneider2018ultralow}
+
+\subsubsection{Loop Memory}
+Superconducting loop memories were the synaptic memory technology originally proposed for the SOENs platform. In these memory cells, circulating current persists indefinitely in a loop of superconducting wire. The current in the loop can be controlled by adding/removing fluxons (the quantized units of magnetic flux) with standard Josephson Junction circuitry. This memory loop is then inductively coupled to a wire supplying a bias current to a Josephson Junction at the synapse. Each time the SNSPD detects a photon, the biased junction will add an integer number of fluxons to another integrating superconductive loop (analogous to the membrane capacitance of a neuron). The number of fluxons added to the integration loop is a function of the bias supplied to the JJ, which is determined by the magnitude of current circulating in the memory loop. This approach has several advantages. The memory is nearly analog, updates are linear, and the endurance is nearly infinite. It is also attractive from a fabrication perspective as loop memory requires absolutely no additional materials. Further, the simplicity of the memory lends itself favorably to 3D integration. Plasticity circuits based on loop memories will also operate at the energy scale of single flux quantum, which is the same as the rest of the circuitry in the network. This allows weight updates to be performed with the spikes the network produces in standard operation, cutting down significantly on peripheral circuitry. There is no need to engineer differently shaped pulses for READ and WRITE operations, and the synapse does not need to be taken offline during programming. Simulations have demonstrated STDP learning with circuits containing only four additional Josephson Junctions \cite{shainline2019superconducting}. Still, there are a couple of issues with loop memory that are concerning. First, the memory is not entirely non-volatile. While current may circulate in a bias loop without any power supply, it cannot survive if the temperature is raised above the critical temperature of the superconducting material (around 9K if Nb is used for wiring). If this memory is to be preserved during a warmup of the network, it must be first transferred to some other memory storage system. Second, these superconducting loops will be large compared to all of the other solutions discussed. \textit{Size estimate depends on if we're using SNSPDs or fluxons. } However, this is not incompatible with the size of superconducting receivers which are already on the order of $1000 \mu m^2$ and the area concerns are mitigated by the excellent potential of loop neurons for 3D integration.
+
+\begin{itemize}
+\item I think we get linear weight updates if we use loop memories, at least before saturation
+\item Can allow many different states
+\item Mention magnetic Josephson junctions
+\end{itemize}
+
+Downsides of superconducting memories:
+
+\begin{itemize}
+    \item No experimental demo? Maybe seagall has done something similar (or is that all single flux?)
+    \item Volatile - but in a temperature sense, not in an electronic sense
+    \item Big?
+\end{itemize}
+
+
+\section{Figures}
+\begin{itemize}
+  \item Diagrams optoelectronic neurons (one super and one semi)
+  \item Graph of Power Consumption vs. Network Size
+  \item Table of different memory element strengths and weaknesses
+  \item Diagram of Fan-in parasitics estimation
+  \item Table of technology benchmarks to reach
+\end{itemize}
+
+\section{Thermodynamic Considerations}
+\subsection{Heat Management}
+\subsection{Cryogenics}
+\section{Neuronal Computation}
+\subsection{Aggregating Inputs}
+\subsection{Digital Neurons}
+\subsection{Sub-Threshold Transistor Circuits}
+\subsection{Josephson Neurons}
+\section{Neuronal Pool}
+\section{Fabrication Challenges}
+\subsection{Light Sources}
+\subsection{3D Integration}
+\subsection{Device Variability}
+\section{Economic Viability}
+\subsection{Wafer Fabrication Costs}
+\subsection{Power Costs}
+\subsection{Cryostat Manufacturing Costs}
+\section{Conclusion}
+
+\begin{outline}
+    \1 RRAM \cite{ielmini2018brain}
+        \2 Key Demonstrations: 
+            \3 2 transistor 1 resistor (2T1R) synapses have demonstrated STDP using overlapping pre and post-synaptic spikes.
+            \3 A network of binary RRAM synapses implementing STDP has been demonstrated to learn simple patterns (4x4 grid)
+            \3 RRAM has beeen monolithically integrated with 90 nm CMOS technology \cite{yin2019monolithically}
+            \3 Endurance greater than $10^{12}$ cycles in tantalum oxide memristors \cite{zahoor2020resistive}
+        \2 Limitations: 
+            \3 Synapses demonstrate non-linear and asymmetric weight updates.
+            \3 Fluctuations in conductance can be significant, particularly at high resistance values. 
+            \3 Only 8 resistance states have been demonstrated in a single device \cite{zahoor2020resistive}
+        \2 Open Questions:  
+            \3 Can peripheral circuitry or using multiple RRAM devices per synapse adjust for the the non-linear updates without adding significant overhead?
+            \3 Can variability and drift be reduced to allow many precise states?
+            \3 While impressive metrics have been hit in many different RRAM systems, can one device meet all of the necessary benchmarks?
+    \1 PCM
+        \2 Key Demonstrations:
+        \2 Limitations:
+            \3 Write energy of 10 pJ is pushing it (becomes dominant power draw for transmitter efficiencies greater than $1\%$) \cite{zahoor2020resistive}, table 1
+        \2 Open Questions:
+    \1 Floating Gate Transistors
+        \2 Key Demonstrations:
+        \2 Limitations \cite{zahoor2020resistive}:
+            \3 Low operation speed (write/erase time: 1ms/.1ms)
+            \3 Limited endurance ($10^6$ write/erase cycles)
+            \3 High write voltage ($>$10V) - although I think I've seen this stated as lower elsewhere 
+        \2 Open Questions:
+    \1 Ferroelectric Transistors
+        \2 Key Demonstrations:
+        \2 Limitations:
+        \2 Open Questions:
+    
+\end{outline}
+
+\section{Appendix A: Fan-In Parasitics}
+\subsection{Semiconductors}
+
+\begin{figure}[htb]
+\begin{center}
+   \includegraphics[scale=0.5]{pic2.png}
+   \caption{Minimum wiring configuration}
+\end{center}
+\end{figure}
+
+Let's assume that the minimal wiring configuration is given in the figure. There are also assumptions that the soma will be much smaller in area than that needed for wiring and that the number of synapses is large. $S$ is the distance between the centers of two waveguides - let's call it $1 \mu m$. $\theta$ is the angular distance between waveguides. We get our first fan-in ($N$) dependent parameter: 
+
+\begin{equation}
+    \theta = \frac{2\pi}{N}
+\end{equation}
+
+Lastly, $L$ is the length of the wires. Miller says wire capacitance is about $200 aF/\mu m$ - we'll call this capacitance/length $c$. The total capacitance ($C_{total}$) of the wiring must then be:
+
+\begin{equation}
+    C_{total} = NLc
+\end{equation}
+
+L is defined by the geometry to be:
+
+\begin{equation}
+    L = \frac{S}{\theta} = \frac{SN}{2\pi}
+\end{equation}
+
+So,
+
+\begin{equation}
+    C_{total} = \frac{N^{2}Sc}{2\pi}
+\end{equation}
+
+
+If the neuron's ever going to fire, you need to build up some voltage ($V$) on all of this capacitance, which will be set by the threshold voltage of whatever transistor technology you're using. This gives an expression for the  amount of energy you're going to need per spike.
+
+\begin{equation}
+    E = \frac{N^{2}ScV^{2}}{4\pi}
+\end{equation}
+
+For $N=1000$, $c = 200aF/\mu m$, $S=1\mu m$, and $V=1V$, you get $E = 16pJ$. For comparison, you'd expect communication to cost ~1pJ for unit transmitter efficiency. This charging energy could also be reduced a couple orders of magnitude by using lower threshold transistors, say $200 mV$. If you push to $N=10^{4}$, this charging energy would be comparable to the communication energy if your transmitter was 1\% efficient.
+
+We also get an estimate (of questionable accuracy) of wiring area that may or may not be useful later:
+
+\begin{equation}
+    A_{wiring} = \pi L^2 = \frac{N^2 S^2}{4\pi}
+\end{equation}
+
+With our numbers, we get $A_{wiring} = 80,000 \mu m^2$. 
+
+Of course, all of this could be repeated with multiple layers of detectors. Everything's reduced by a factor of the number of layers ($N_L$):
+
+\begin{equation}
+    C_{total} = \frac{N_{tot}^{2}Sc}{2\pi N_L}
+\end{equation}
+
+\begin{equation}
+    E = \frac{N_{tot}^{2}ScV^{2}}{4\pi N_L}
+\end{equation}
+
+\begin{equation}
+    A_{wiring} = \pi L^2 = \frac{N_{tot}^2 S^2}{4\pi N_L}
+\end{equation}
+
+The total capacitance also gives you an idea for the maximum amount of current that you'd like a synapse to be able to produce. Let's say you want a single synapse that's capable of charging up all that capacitance. It'll need to provide a current of:
+
+\begin{equation}
+    I = C_{total}Vf = \frac{N^{\frac{3}{2}}ScVf}{2\pi N_L}
+\end{equation}
+
+If you want $N=1000$ and $f=10 MHz$ (and $N_L = 1$), you're going to need synapses capable of outputting $300 \mu A$ if $\sqrt{N}$ synapses are going to be able to switch the neuron. $N=10,000$ gives an outrageous (right?) $30 mA$. So maybe this equation is a nice look at the trade-offs between current, fan-in, and frequency.
+
+\section{Superconductors}
+Let's now follow the analogous calculation for superconductors neurons. This is still very much a toy calculation, but let's assume that the wave-guide geometry is similar. First, let's say that all of the synapses are feeding into a single neuronal integration loop. The minimum amount of wiring associated with the loop will simply be the circumference of the circle define in figure 1. This will just be $NS$, where $N$ is the number of synapses and $S$ is the distance between the centers of adjacent wave-guides. The total inductance $L$ of this loop will be:
+
+\begin{equation}
+    L = \frac{NSl}{w}
+\end{equation}
+
+Where $l$ is the inductance per square of the material (180 pH/$\msquare$ for MoSi), and $w$ is the width of the wires. The energy stored in a loop (at a minimum) is therefore:
+
+\begin{equation}
+    E = \frac{NSlI^2}{2w}
+\end{equation}
+
+For $N=1000$, $w=50 nm$, and $I=10\mu A$ (a reasonable critical current for Josephson Junction), this energy is only around 1 fJ, even after cooling is considered.
+
+\section{Brainstorming about Figures}
+\begin{itemize}
+    \item power vs num neurons/crossover (Fig.1)
+    \item Numphotons vs bandwidth
+    \item LED current and energy vs numphotons for a fixed bandwidth
+    \item transmitter C vs I for given $\tau$
+    \item Diagram of heat removal from wafer surface/system volume
+    \item Diagram of 3D integration
+    \item Circuit diagrams (se/su synapses; se/su transmitters)
+    \item area required for synapses vs $\tau$ (leak rate) and $\omega$ (oscillation frequency for sub-threshold oscillations)
+\end{itemize}
+
+\section{Open Questions}
+\begin{itemize}
+    \item Is LED current commensurate with MOSFET for modern node?
+    \item What is power density on wafer surface in both cases?
+    \item Can this heat be removed with H20/He?
+    \item Consider also 3D heat removal
+    \item How much current needs to be delivered to a wafer in each case?
+\end{itemize}
+
+\section{Misc Notes}
+\begin{itemize}
+    \item The good news is that both approaches offer sufficient promise to merit further investigation
+    \item The confusing news is that both have strengths and weaknesses, so we are not able at this time to declare a clear winner
+    \item the bad news is that both approaches face significant technological challenges when scaling to neuromorphic supercomputers, so it may turn out that neither comes to fruition, even in the asymptotic technological limit
+    \item the good news within the bad news is that if neither can achieve human-brain-scale cognitive systems, humans may remain the superior intelligence on the planet
+    \item the bad news within the good news within the bad news is that if we remain the superior intelligence on the planet, cognitive hardware capable of being duped into believing Qanon conspiracy theories is as good as nature can do
+\end{itemize}
+
+\bibliographystyle{unsrt}
+\bibliography{bib}
+
+\begin{thebibliography}{}
+\bibitem{Miller} Miller Attojoule https://ee.stanford.edu/~dabm/448.pdf
+\bibitem{cooling}https://arxiv.org/pdf/1501.07154.pdf just below table 7
+
+\end{thebibliography}
+\end{document}
