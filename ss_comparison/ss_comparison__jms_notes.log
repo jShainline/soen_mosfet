@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  19 FEB 2021 09:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 12:45
 entering extended mode
 **./ss_comparison__jms_notes.tex
 (ss_comparison__jms_notes.tex
@@ -384,7 +384,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5792 strings out of 481225
  86652 string characters out of 2906175
- 347774 words of memory out of 3000000
+ 347780 words of memory out of 3000000
  21284 multiletter control sequences out of 15000+200000
  544933 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -407,7 +407,7 @@ ublic/amsfonts/cm/cmr8.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/jeffr/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ss_comparison__jms_notes.pdf (10 pages, 281582 bytes).
+Output written on ss_comparison__jms_notes.pdf (10 pages, 282602 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
