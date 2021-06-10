@@ -1,0 +1,1702 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  10 JUN 2021 12:01
+entering extended mode
+**"./_20210426 _ overleaf bak.tex"
+("_20210426 _ overleaf bak.tex"
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-07-17>
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip49
+\multirow@cntb=\count179
+\multirow@dima=\skip50
+\bigstrutjot=\dimen143
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/outlines\outlines.sty
+Package: outlines 2012/1/23 1.1 Ch. Pecheur
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count180
+\float@exts=\toks19
+\float@box=\box45
+\@float@everytoks=\toks20
+\@floatcapt=\box46
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box47
+\UL@hyphenbox=\box48
+\UL@skip=\skip51
+\UL@hook=\toks21
+\UL@height=\dimen146
+\UL@pe=\count181
+\UL@pixel=\dimen147
+\ULC@box=\box49
+Package: ulem 2019/11/18
+\ULdepth=\dimen148
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks22
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+y
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen149
+\Hy@linkcounter=\count182
+\Hy@pagecounter=\count183
+ (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count184
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count185
+ (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen150
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count186
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count187
+\c@Item=\count188
+\c@Hfootnote=\count189
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/atveryend\atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count190
+\c@bookmark@seq@number=\count191
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 27.
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+mode.def
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count192
+\l__pdf_internal_box=\box50
+)
+No file "_20210426 _ overleaf bak".aux.
+\openout1 = `"_20210426 _ overleaf bak.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(51.0727pt, 512.1496pt, 51.07271pt)
+* v-part:(T,H,B)=(44.84152pt, 682.86613pt, 67.26233pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=512.1496pt
+* \textheight=682.86613pt
+* \oddsidemargin=-21.1973pt
+* \evensidemargin=-21.1973pt
+* \topmargin=-64.42847pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count193
+\scratchdimen=\dimen153
+\scratchbox=\box51
+\nofMPsegments=\count194
+\nofMParguments=\count195
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count196
+\MPscratchDim=\dimen154
+\MPnumerator=\count197
+\makeMPintoPDFobject=\count198
+\everyMPtoPDFconversion=\toks24
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+\AtBeginShipoutBox=\box52
+Package hyperref Info: Link coloring ON on input line 34.
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count199
+)
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
+\@outlinefile=\write4
+\openout4 = `"_20210426 _ overleaf bak.out"'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
+
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+
+
+(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: Citation `furber2016large' on page 1 undefined on input line 50.
+
+
+
+LaTeX Warning: Citation `shainline2019superconducting' on page 1 undefined on i
+nput line 50.
+
+
+LaTeX Warning: Citation `young2019review' on page 1 undefined on input line 50.
+
+
+
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+
+
+LaTeX Warning: File `_Schematic.pdf' not found on input line 54.
+
+
+! Package pdftex.def Error: File `_Schematic.pdf' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54     \includegraphics[scale=1]{_Schematic.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `seda2016' on page 1 undefined on input line 59.
+
+
+LaTeX Warning: Citation `nazirzadeh2018energy' on page 1 undefined on input lin
+e 59.
+
+
+LaTeX Warning: Citation `shastri2021photonics' on page 1 undefined on input lin
+e 59.
+
+
+LaTeX Warning: Citation `marder1987neurotransmitters' on page 1 undefined on in
+put line 59.
+
+
+LaTeX Warning: Citation `euler2001dendritic' on page 1 undefined on input line 
+59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+
+]
+
+LaTeX Warning: Reference `fig:Schematic' on page 2 undefined on input line 67.
+
+
+LaTeX Warning: Citation `shainline2017superconducting' on page 2 undefined on i
+nput line 69.
+
+
+LaTeX Warning: Citation `shainline2019superconducting' on page 2 undefined on i
+nput line 69.
+
+
+LaTeX Warning: Citation `shainline2019fluxonic' on page 2 undefined on input li
+ne 69.
+
+
+LaTeX Warning: Citation `sh2021' on page 2 undefined on input line 69.
+
+
+LaTeX Warning: Citation `miller2017attojoule' on page 2 undefined on input line
+ 75.
+
+
+LaTeX Warning: Citation `spga2011' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Citation `pesc2012' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Citation `akhlaghi2015waveguide' on page 2 undefined on input li
+ne 78.
+
+
+LaTeX Warning: Citation `feka2015' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Citation `saga2015' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Citation `shbu2017b' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Citation `ferrari2018waveguide' on page 2 undefined on input lin
+e 78.
+
+
+LaTeX Warning: Citation `buta2020' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Reference `fig:sup_synapse' on page 2 undefined on input line 78
+.
+
+[2]
+
+LaTeX Warning: Citation `razavi2012design' on page 3 undefined on input line 82
+.
+
+
+LaTeX Warning: Citation `mave2013' on page 3 undefined on input line 82.
+
+
+LaTeX Warning: Citation `rene2020' on page 3 undefined on input line 82.
+
+
+LaTeX Warning: Citation `stein2005neuronal' on page 3 undefined on input line 8
+7.
+
+
+LaTeX Warning: Citation `mcdonnell2011benefits' on page 3 undefined on input li
+ne 87.
+
+
+LaTeX Warning: Reference `eq: poisson' on page 3 undefined on input line 87.
+
+
+LaTeX Warning: Reference `sec:instantiation' on page 3 undefined on input line 
+93.
+
+
+LaTeX Warning: Citation `spga2011' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Citation `pesc2012' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Citation `akhlaghi2015waveguide' on page 3 undefined on input li
+ne 95.
+
+
+LaTeX Warning: Citation `feka2015' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Citation `saga2015' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Citation `shbu2017b' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Citation `ferrari2018waveguide' on page 3 undefined on input lin
+e 95.
+
+
+LaTeX Warning: Citation `buta2020' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Citation `vema2012' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Reference `sec:instantiation' on page 3 undefined on input line 
+95.
+
+
+LaTeX Warning: Citation `rosenberg2013high' on page 3 undefined on input line 9
+5.
+
+
+LaTeX Warning: Citation `vetter2016cavity' on page 3 undefined on input line 95
+.
+
+
+LaTeX Warning: Citation `wove2019' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Citation `shainline2019superconducting' on page 3 undefined on i
+nput line 95.
+
+
+LaTeX Warning: File `ReceiverNew.pdf' not found on input line 99.
+
+
+! Package pdftex.def Error: File `ReceiverNew.pdf' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 ...hics[width=.49\textwidth]{ReceiverNew.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:filtering' on page 3 undefined on input line 100.
+
+
+
+LaTeX Warning: Reference `fig:filtering' on page 3 undefined on input line 100.
+
+
+
+LaTeX Warning: Citation `miller2017attojoule' on page 3 undefined on input line
+ 105.
+
+
+LaTeX Warning: Reference `fig:sup_synapse' on page 3 undefined on input line 10
+5.
+
+
+LaTeX Warning: Citation `debaes2003receiver' on page 3 undefined on input line 
+105.
+
+[3]
+
+LaTeX Warning: Citation `miller2017attojoule' on page 4 undefined on input line
+ 107.
+
+
+LaTeX Warning: Citation `derose2011ultra' on page 4 undefined on input line 112
+.
+
+
+LaTeX Warning: Citation `meor2014' on page 4 undefined on input line 112.
+
+
+LaTeX Warning: Citation `derose2011ultra' on page 4 undefined on input line 112
+.
+
+
+LaTeX Warning: Citation `zhang2020scalable' on page 4 undefined on input line 1
+14.
+
+
+LaTeX Warning: Reference `sec:instantiation' on page 4 undefined on input line 
+114.
+
+
+LaTeX Warning: Citation `nozaki2018forward' on page 4 undefined on input line 1
+14.
+
+
+LaTeX Warning: Citation `miller2017attojoule' on page 4 undefined on input line
+ 114.
+
+
+LaTeX Warning: Citation `assefa2010reinventing' on page 4 undefined on input li
+ne 114.
+
+
+LaTeX Warning: Citation `assefa2010reinventing' on page 4 undefined on input li
+ne 114.
+
+
+LaTeX Warning: Citation `virot2014germanium' on page 4 undefined on input line 
+114.
+
+
+LaTeX Warning: Citation `pizzone2020analysis' on page 4 undefined on input line
+ 114.
+
+
+LaTeX Warning: Reference `fig:communication' on page 4 undefined on input line 
+116.
+
+
+LaTeX Warning: File `Opt_Power.pdf' not found on input line 119.
+
+
+! Package pdftex.def Error: File `Opt_Power.pdf' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119     \includegraphics[scale=1]{Opt_Power.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `mccaughan2019superconducting' on page 4 undefined on i
+nput line 125.
+
+
+LaTeX Warning: Citation `romeira2019physical' on page 4 undefined on input line
+ 128.
+
+
+LaTeX Warning: Citation `romeira2019physical' on page 4 undefined on input line
+ 128.
+
+[4]
+
+LaTeX Warning: Citation `iyxi1993' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `shxu2007' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `warga2008electroluminescence' on page 5 undefined on i
+nput line 130.
+
+
+LaTeX Warning: Citation `wabo2005' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `enpo1985' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `paga1996' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `brha1986' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `brbr1989' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `rosh2007b' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `bata2007' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `ng2001efficient' on page 5 undefined on input line 130
+.
+
+
+LaTeX Warning: Citation `kvba2004' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `grzh2001' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `Fadaly2020' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `kvba2004' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `grzh2001' on page 5 undefined on input line 130.
+
+
+LaTeX Warning: Citation `norman2018perspective' on page 5 undefined on input li
+ne 132.
+
+
+LaTeX Warning: Citation `chli2016' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `jung2017high' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `norman2018perspective' on page 5 undefined on input li
+ne 132.
+
+
+LaTeX Warning: Citation `norman2018perspective' on page 5 undefined on input li
+ne 132.
+
+
+LaTeX Warning: Citation `tang2019integration' on page 5 undefined on input line
+ 132.
+
+
+LaTeX Warning: Citation `sost2016' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `crsa2017' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `huli2019' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `szha2019' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `jito2020' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `jubo2012' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `zhha2018' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `zhang2019iii' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `haxu2021' on page 5 undefined on input line 132.
+
+
+LaTeX Warning: Citation `gurioli1991temperature' on page 5 undefined on input l
+ine 134.
+
+
+LaTeX Warning: Citation `dolores2017waveguide' on page 5 undefined on input lin
+e 134.
+
+
+LaTeX Warning: Citation `sa1958' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Citation `davies1989optical' on page 5 undefined on input line 1
+34.
+
+
+LaTeX Warning: Citation `suku2014' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Citation `buckley2017all' on page 5 undefined on input line 134.
+
+
+
+LaTeX Warning: Citation `bere2018' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Citation `chbe2018' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Citation `hobe2020' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Citation `redu2020' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Citation `bech2020' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Citation `romeira2018purcell' on page 5 undefined on input line 
+134.
+
+
+LaTeX Warning: Citation `buckley2017all' on page 5 undefined on input line 134.
+
+
+
+LaTeX Warning: Citation `bao2007point' on page 5 undefined on input line 134.
+
+
+LaTeX Warning: Citation `buckley2020optimization' on page 5 undefined on input 
+line 134.
+
+
+LaTeX Warning: Citation `bowers2016recent' on page 5 undefined on input line 13
+7.
+
+
+LaTeX Warning: Citation `halbritter2014high' on page 5 undefined on input line 
+137.
+
+! Undefined control sequence.
+l.137 ...nd resistive states. In Ref.\,\onlinecite
+                                                  {mccaughan2019superconduct...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `kose2000' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `stsp2015' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `haah2016' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `sava2017' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `voma2007' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `indiveri2011neuromorphic' on page 5 undefined on input
+ line 140.
+
+
+LaTeX Warning: Citation `pfgr2013' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `brne2013' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `bega2014' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `abta2019' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Citation `shainline2019fluxonic' on page 5 undefined on input li
+ne 140.
+
+
+LaTeX Warning: Citation `crotty2010josephson' on page 5 undefined on input line
+ 140.
+
+
+LaTeX Warning: Citation `toomey2019design' on page 5 undefined on input line 14
+0.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+
+LaTeX Warning: Citation `mead1990neuromorphic' on page 6 undefined on input lin
+e 143.
+
+
+LaTeX Warning: Citation `rajendran2012specifications' on page 6 undefined on in
+put line 143.
+
+
+LaTeX Warning: Citation `indiveri2011neuromorphic' on page 6 undefined on input
+ line 143.
+
+
+LaTeX Warning: Citation `lide2015' on page 6 undefined on input line 143.
+
+
+LaTeX Warning: Citation `sourikopoulos20174' on page 6 undefined on input line 
+145.
+
+
+LaTeX Warning: Citation `indiveri2019importance' on page 6 undefined on input l
+ine 145.
+
+
+LaTeX Warning: Citation `schemmel2017accelerated' on page 6 undefined on input 
+line 145.
+
+
+LaTeX Warning: Citation `indiveri2019importance' on page 6 undefined on input l
+ine 147.
+
+
+LaTeX Warning: Citation `be2007' on page 6 undefined on input line 147.
+
+
+LaTeX Warning: Citation `indiveri2011neuromorphic' on page 6 undefined on input
+ line 147.
+
+
+LaTeX Warning: Reference `apx:TimeCon' on page 6 undefined on input line 147.
+
+
+LaTeX Warning: Reference `fig:filtering' on page 6 undefined on input line 149.
+
+
+
+LaTeX Warning: Citation `dalgaty2019hybrid' on page 6 undefined on input line 1
+49.
+
+
+LaTeX Warning: Citation `chicca2014neuromorphic' on page 6 undefined on input l
+ine 149.
+
+
+LaTeX Warning: Citation `hago1991' on page 6 undefined on input line 152.
+
+
+LaTeX Warning: Citation `hiak1991' on page 6 undefined on input line 152.
+
+
+LaTeX Warning: Citation `crotty2010josephson' on page 6 undefined on input line
+ 152.
+
+
+LaTeX Warning: Citation `crotty2010josephson' on page 6 undefined on input line
+ 154.
+
+
+LaTeX Warning: Citation `toomey2019design' on page 6 undefined on input line 15
+4.
+
+
+LaTeX Warning: Citation `schneider2018tutorial' on page 6 undefined on input li
+ne 154.
+
+
+LaTeX Warning: Citation `shainline2019fluxonic' on page 6 undefined on input li
+ne 154.
+
+
+LaTeX Warning: Citation `schneider2017energy' on page 6 undefined on input line
+ 154.
+
+
+LaTeX Warning: Citation `crotty2010josephson' on page 6 undefined on input line
+ 154.
+
+
+LaTeX Warning: Reference `apx:squid_area' on page 6 undefined on input line 156
+.
+
+
+LaTeX Warning: Citation `schneider2018tutorial' on page 6 undefined on input li
+ne 156.
+
+
+LaTeX Warning: Citation `schneider2017energy' on page 6 undefined on input line
+ 156.
+
+[6]
+
+LaTeX Warning: Reference `fig:filtering' on page 7 undefined on input line 158.
+
+
+
+LaTeX Warning: Reference `apx:TimeCon' on page 7 undefined on input line 158.
+
+
+LaTeX Warning: Citation `cocchi2017criticality' on page 7 undefined on input li
+ne 158.
+
+
+LaTeX Warning: Citation `schneider2020fan' on page 7 undefined on input line 16
+0.
+
+
+LaTeX Warning: Citation `shainline2019superconducting' on page 7 undefined on i
+nput line 160.
+
+
+LaTeX Warning: Citation `tolpygo2016superconductor' on page 7 undefined on inpu
+t line 162.
+
+
+LaTeX Warning: Citation `tolpygo2016superconductor' on page 7 undefined on inpu
+t line 162.
+
+
+LaTeX Warning: Citation `kisa2011' on page 7 undefined on input line 162.
+
+
+LaTeX Warning: Reference `fig:filtering' on page 7 undefined on input line 164.
+
+
+
+LaTeX Warning: Reference `fig:sup_synapse' on page 7 undefined on input line 16
+4.
+
+
+LaTeX Warning: File `Synaptic Filters.pdf' not found on input line 167.
+
+
+! Package pdftex.def Error: File `Synaptic Filters.pdf' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 ...idth=.48\textwidth]{Synaptic Filters.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> ... is introduced in Ref.\,\onlinecite 
+                                                  {dalgaty2019hybrid}. }}{\t...
+l.168 ...n Ref.\,\onlinecite{dalgaty2019hybrid}. }
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:sup_synapse' on page 7 undefined on input line 16
+8.
+
+! Undefined control sequence.
+<argument> ... is introduced in Ref.\,\onlinecite 
+                                                  {dalgaty2019hybrid}. \fi 
+l.168 ...n Ref.\,\onlinecite{dalgaty2019hybrid}. }
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:sup_synapse' on page 7 undefined on input line 16
+8.
+
+! Undefined control sequence.
+<argument> ... is introduced in Ref.\,\onlinecite 
+                                                  {dalgaty2019hybrid}. \fi 
+l.168 ...n Ref.\,\onlinecite{dalgaty2019hybrid}. }
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `vrso1996' on page 7 undefined on input line 178.
+
+
+LaTeX Warning: Citation `vora2005' on page 7 undefined on input line 178.
+
+[7]
+
+LaTeX Warning: Reference `sec:communication' on page 8 undefined on input line 
+189.
+
+
+LaTeX Warning: Citation `zahoor2020resistive' on page 8 undefined on input line
+ 189.
+
+
+LaTeX Warning: Citation `schneider2018ultralow' on page 8 undefined on input li
+ne 189.
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 192--193
+\OT1/cmr/m/n/10 tic up-dates within the min-i-mum inter-spike in-ter-val.
+ []
+
+
+LaTeX Warning: Citation `pfeil20124' on page 8 undefined on input line 195.
+
+
+LaTeX Warning: Citation `wang2018training' on page 8 undefined on input line 19
+5.
+
+
+LaTeX Warning: Citation `bartol2015nanoconnectomic' on page 8 undefined on inpu
+t line 195.
+
+
+LaTeX Warning: Citation `fudr2005' on page 8 undefined on input line 195.
+
+
+LaTeX Warning: Citation `fuab2007' on page 8 undefined on input line 195.
+
+
+LaTeX Warning: Reference `tab:memory_metrics' on page 8 undefined on input line
+ 197.
+
+
+LaTeX Warning: Reference `Loops' on page 8 undefined on input line 217.
+
+
+LaTeX Warning: Citation `upadhyay2019emerging' on page 8 undefined on input lin
+e 222.
+
+
+LaTeX Warning: Citation `diorio1998floating' on page 8 undefined on input line 
+222.
+
+
+LaTeX Warning: Citation `ramakrishnan2011floating' on page 8 undefined on input
+ line 222.
+
+
+LaTeX Warning: Citation `hasler2013finding' on page 8 undefined on input line 2
+22.
+
+
+LaTeX Warning: Citation `zahoor2020resistive' on page 8 undefined on input line
+ 222.
+
+
+LaTeX Warning: Citation `stsn2008' on page 8 undefined on input line 222.
+
+
+LaTeX Warning: Citation `yast2012' on page 8 undefined on input line 222.
+
+
+LaTeX Warning: Citation `ab2018' on page 8 undefined on input line 222.
+
+
+LaTeX Warning: Citation `yin2019monolithically' on page 8 undefined on input li
+ne 222.
+
+
+LaTeX Warning: Citation `ielmini2018brain' on page 8 undefined on input line 22
+2.
+
+
+LaTeX Warning: Citation `dalgaty2019hybrid' on page 8 undefined on input line 2
+22.
+
+
+LaTeX Warning: Citation `zahoor2020resistive' on page 8 undefined on input line
+ 222.
+
+
+LaTeX Warning: Citation `ambrogio2016unsupervised' on page 8 undefined on input
+ line 222.
+
+
+LaTeX Warning: Citation `upadhyay2019emerging' on page 8 undefined on input lin
+e 222.
+
+
+LaTeX Warning: Citation `zahoor2020resistive' on page 8 undefined on input line
+ 222.
+
+
+LaTeX Warning: Citation `kim2019ferroelectric' on page 8 undefined on input lin
+e 222.
+
+
+LaTeX Warning: Citation `kim2018recent' on page 8 undefined on input line 222.
+
+
+LaTeX Warning: Citation `upadhyay2019emerging' on page 8 undefined on input lin
+e 222.
+
+
+LaTeX Warning: Citation `zhang2020brain' on page 8 undefined on input line 222.
+
+
+
+LaTeX Warning: Reference `tab:memory_metrics' on page 8 undefined on input line
+ 222.
+
+[8]
+
+LaTeX Warning: Citation `schneider2018ultralow' on page 9 undefined on input li
+ne 228.
+
+
+LaTeX Warning: Reference `tab:memory_metrics' on page 9 undefined on input line
+ 228.
+
+
+LaTeX Warning: Citation `schneider2018tutorial' on page 9 undefined on input li
+ne 228.
+
+
+LaTeX Warning: Citation `vatu1998' on page 9 undefined on input line 231.
+
+
+LaTeX Warning: Citation `ka1999' on page 9 undefined on input line 231.
+
+
+LaTeX Warning: Citation `sh2018' on page 9 undefined on input line 231.
+
+
+LaTeX Warning: Citation `shainline2019superconducting' on page 9 undefined on i
+nput line 231.
+
+
+LaTeX Warning: Reference `fig:sup_synapse' on page 9 undefined on input line 23
+1.
+
+
+LaTeX Warning: Citation `tobo2018' on page 9 undefined on input line 231.
+
+
+LaTeX Warning: Citation `shainline2019superconducting' on page 9 undefined on i
+nput line 233.
+
+[9]
+
+LaTeX Warning: Citation `brsc1998' on page 10 undefined on input line 241.
+
+
+LaTeX Warning: Citation `bu2006' on page 10 undefined on input line 241.
+
+
+LaTeX Warning: Citation `busp2012' on page 10 undefined on input line 241.
+
+
+LaTeX Warning: Reference `eq:degree' on page 10 undefined on input line 245.
+
+
+LaTeX Warning: Citation `frfr2004' on page 10 undefined on input line 245.
+
+
+LaTeX Warning: Citation `bu2006' on page 10 undefined on input line 250.
+
+
+LaTeX Warning: Citation `si1962' on page 10 undefined on input line 250.
+
+
+LaTeX Warning: Citation `mela2010' on page 10 undefined on input line 250.
+
+
+LaTeX Warning: Citation `mo1997' on page 10 undefined on input line 250.
+
+
+LaTeX Warning: Citation `mela2010' on page 10 undefined on input line 250.
+
+
+LaTeX Warning: Citation `bosp2015' on page 10 undefined on input line 250.
+
+
+LaTeX Warning: Citation `beba2017' on page 10 undefined on input line 250.
+
+
+LaTeX Warning: Citation `busp2009' on page 10 undefined on input line 252.
+
+
+LaTeX Warning: Citation `frbu2016' on page 10 undefined on input line 256.
+
+[10]
+
+LaTeX Warning: Citation `ke1982' on page 11 undefined on input line 258.
+
+
+LaTeX Warning: Reference `fig:num_planes' on page 11 undefined on input line 26
+8.
+
+
+LaTeX Warning: Reference `apx:scaling' on page 11 undefined on input line 268.
+
+
+LaTeX Warning: File `num_planes.pdf' not found on input line 272.
+
+
+! Package pdftex.def Error: File `num_planes.pdf' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.272 ...ludegraphics[width=8.6cm]{num_planes.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `schemmel2010wafer' on page 11 undefined on input line 
+279.
+
+
+LaTeX Warning: Reference `fig:num_planes' on page 11 undefined on input line 27
+9.
+
+
+LaTeX Warning: Reference `fig:num_planes' on page 11 undefined on input line 27
+9.
+
+
+LaTeX Warning: Citation `shpa2015' on page 11 undefined on input line 279.
+
+
+LaTeX Warning: Citation `sahu2015' on page 11 undefined on input line 279.
+
+
+LaTeX Warning: Citation `chbu2017' on page 11 undefined on input line 279.
+
+
+LaTeX Warning: Citation `zhli2018' on page 11 undefined on input line 279.
+
+
+LaTeX Warning: Reference `apx:scaling' on page 11 undefined on input line 279.
+
+
+LaTeX Warning: Citation `ro1983' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `knan2008' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `saan2008' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `viba2011' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `zhxi2015' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `li2013' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `elfe2016' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `lish2017' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `elfe2016' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Reference `fig:num_planes' on page 11 undefined on input line 28
+1.
+
+
+LaTeX Warning: Citation `rupa2019' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Reference `apx:TimeCon' on page 11 undefined on input line 281.
+
+
+LaTeX Warning: Citation `indiveri2019importance' on page 11 undefined on input 
+line 281.
+
+
+LaTeX Warning: Citation `tobo2019' on page 11 undefined on input line 283.
+
+
+LaTeX Warning: Citation `anna2017' on page 11 undefined on input line 283.
+
+
+LaTeX Warning: Citation `vema2012' on page 11 undefined on input line 283.
+
+
+LaTeX Warning: Reference `apx:squid_area' on page 11 undefined on input line 28
+3.
+
+
+Underfull \vbox (badness 2469) has occurred while \output is active []
+
+ [11]
+
+LaTeX Warning: Reference `fig:degree' on page 12 undefined on input line 285.
+
+
+LaTeX Warning: Reference `fig:path_length__vs__width' on page 12 undefined on i
+nput line 285.
+
+
+LaTeX Warning: Reference `apx:scaling' on page 12 undefined on input line 285.
+
+
+LaTeX Warning: Citation `shainline2020optoelectronic' on page 12 undefined on i
+nput line 288.
+
+
+LaTeX Warning: Citation `mo1978' on page 12 undefined on input line 288.
+
+
+LaTeX Warning: Citation `mo1997' on page 12 undefined on input line 288.
+
+
+LaTeX Warning: Citation `mela2010' on page 12 undefined on input line 288.
+
+
+LaTeX Warning: Citation `bosp2015' on page 12 undefined on input line 288.
+
+
+LaTeX Warning: Citation `beba2017' on page 12 undefined on input line 288.
+
+
+LaTeX Warning: Citation `alekseev2015basics' on page 12 undefined on input line
+ 294.
+
+
+LaTeX Warning: Citation `holmes2013energy' on page 12 undefined on input line 2
+94.
+
+
+LaTeX Warning: Citation `tolpygo2016superconductor' on page 12 undefined on inp
+ut line 297.
+
+
+LaTeX Warning: Reference `fig:freq_size' on page 12 undefined on input line 297
+.
+
+
+LaTeX Warning: File `Pow.pdf' not found on input line 300.
+
+
+! Package pdftex.def Error: File `Pow.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.300     \includegraphics[scale=1]{Pow.pdf}
+                                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `tolpygo2016superconductor' on page 12 undefined on inp
+ut line 307.
+
+! Undefined control sequence.
+l.307 ...cm$^2$ is postulated in Ref.\,\onlinecite
+                                                  {zhirnov2003limits}. In co...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `tolpygo2016superconductor' on page 12 undefined on inp
+ut line 307.
+
+
+LaTeX Warning: Reference `sec:instantiation' on page 12 undefined on input line
+ 307.
+
+[12]
+
+LaTeX Warning: File `Targets.pdf' not found on input line 315.
+
+
+! Package pdftex.def Error: File `Targets.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.315 ...cludegraphics[width = 8.6cm]{Targets.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[13]
+
+LaTeX Warning: Citation `chicca2014neuromorphic' on page 14 undefined on input 
+line 335.
+
+
+LaTeX Warning: Citation `linares2003design' on page 14 undefined on input line 
+339.
+
+
+LaTeX Warning: Citation `wu2009metal' on page 14 undefined on input line 339.
+
+
+LaTeX Warning: Reference `fig:timecon' on page 14 undefined on input line 339.
+
+
+LaTeX Warning: Reference `sec:instantiation' on page 14 undefined on input line
+ 339.
+
+[14]
+
+LaTeX Warning: Reference `fig:timecon' on page 15 undefined on input line 353.
+
+
+LaTeX Warning: Citation `matula1979electrical' on page 15 undefined on input li
+ne 353.
+
+
+LaTeX Warning: Citation `indiveri2019importance' on page 15 undefined on input 
+line 353.
+
+
+LaTeX Warning: File `TimeConstant.pdf' not found on input line 356.
+
+
+! Package pdftex.def Error: File `TimeConstant.pdf' not found: using draft sett
+ing.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.356 ...degraphics[width=8.6cm]{TimeConstant.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `tolpygo2016superconductor' on page 15 undefined on inp
+ut line 362.
+
+
+LaTeX Warning: Citation `clbr2006' on page 15 undefined on input line 362.
+
+
+LaTeX Warning: Citation `jaycox1981planar' on page 15 undefined on input line 3
+62.
+
+
+LaTeX Warning: Reference `fig:degree' on page 15 undefined on input line 370.
+
+
+LaTeX Warning: Reference `fig:path_length__vs__width' on page 15 undefined on i
+nput line 370.
+
+
+LaTeX Warning: Reference `fig:degree' on page 15 undefined on input line 370.
+
+
+LaTeX Warning: Reference `eq:degree' on page 15 undefined on input line 370.
+
+
+LaTeX Warning: File `degree_vs_num_nodes.pdf' not found on input line 374.
+
+
+! Package pdftex.def Error: File `degree_vs_num_nodes.pdf' not found: using dra
+ft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 ...ics[width=8.6cm]{degree_vs_num_nodes.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:path_length__vs__width' on page 15 undefined on i
+nput line 379.
+
+
+LaTeX Warning: Reference `eq:area_e' on page 15 undefined on input line 379.
+
+
+LaTeX Warning: Reference `eq:area_p' on page 15 undefined on input line 379.
+
+
+LaTeX Warning: File `path_length__vs__width.pdf' not found on input line 383.
+
+
+! Package pdftex.def Error: File `path_length__vs__width.pdf' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 ...[width=8.6cm]{path_length__vs__width.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+No file "_20210426 _ overleaf bak".bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
+[15]
+
+LaTeX Warning: Text page 16 contains only floats.
+
+[16
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+ ("_20210426 _ overleaf bak.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+
+
+Package rerunfilecheck Warning: File `"_20210426 _ overleaf bak".out' has chang
+ed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"_20210426 _ overleaf bak".out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  1BD09C795C942F9A2F786C4301585536;2518.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
+ ) 
+Here is how much of TeX's memory you used:
+ 7555 strings out of 481225
+ 113849 string characters out of 2906175
+ 390147 words of memory out of 3000000
+ 22891 multiletter control sequences out of 15000+200000
+ 544513 words of font info for 66 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,10n,37p,2678b,393s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\jeffr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbx9.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jeffr/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jeffr/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/jeffr/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/j
+effr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr17.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr7.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jeffr/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/jeffr/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/jeffr/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
+/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
+msam7.pfb>
+Output written on "_20210426 _ overleaf bak.pdf" (16 pages, 318507 bytes).
+PDF statistics:
+ 232 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

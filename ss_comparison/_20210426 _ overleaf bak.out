@@ -1,0 +1,35 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Communication}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Optical Receivers}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{SOENs Receivers}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Semiconductor Receivers}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Optical Transmitters}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Integrated Light Sources}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Driving Circuitry}{subsection.2.2}% 8
+\BOOKMARK [1][-]{section.3}{Electronic Neuronal Computation}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Semiconductor Electronics}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Superconducting Electronics}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Synaptic Memory}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Memory Benchmarks}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Endurance}{subsection.4.1}% 14
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Update Energy}{subsection.4.1}% 15
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Update Speed}{subsection.4.1}% 16
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Weight Precision}{subsection.4.1}% 17
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Programming Signals}{subsection.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Proposed Technologies}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Room-temperature Technologies}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Superconducting Technologies}{subsection.4.2}% 21
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Magnetic Josepson junctions}{subsection.4.2}% 22
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Loop Memory}{subsection.4.2}% 23
+\BOOKMARK [1][-]{section.5}{System Level Considerations}{}% 24
+\BOOKMARK [2][-]{subsection.5.1}{Considerations from graph theory}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.2}{Generic spatial constraints}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.3}{Fabrication Processes}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.4}{Constructing Multi-Wafer Systems}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.5}{Power consumption and cooling}{section.5}% 29
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Cooling Systems}{subsection.5.5}% 30
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Power Limitations}{subsection.5.5}% 31
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 32
+\BOOKMARK [1][-]{appendix.A}{Implementing Long Time Constants}{}% 33
+\BOOKMARK [1][-]{appendix.B}{Area and Energy in Superconducting Synapses}{}% 34
+\BOOKMARK [1][-]{appendix.C}{Further Scaling Analysis}{}% 35

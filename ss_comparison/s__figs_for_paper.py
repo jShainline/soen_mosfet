@@ -5,7 +5,7 @@ from _util import physical_constants, color_dictionary
 p = physical_constants()
 colors = color_dictionary()
 
-plt.close('all')
+# plt.close('all')
 
 plt.rcParams['axes.labelsize'] = 10
 plt.rcParams['ytick.labelsize'] = 10
@@ -246,7 +246,7 @@ I_c__vec = np.logspace(-5,-3,1000)
 
 fig, ax = plt.subplots(nrows = 1, ncols = 1, sharex = True, sharey = False, figsize = (tn,tn/1.618)) 
 # fig.suptitle('Washer size vs squid Ic for beta_L = 1')
-w_sq = p['Phi0']/(p['mu0']*I_c__vec)
+w_sq = 2*p['Phi0']/(1.25*p['mu0']*I_c__vec)
 w_sy = 2*w_sq
 ax.loglog(I_c__vec*1e6,w_sq*1e6, '-', color = colors['blue3'], label = 'w_sq') # , label = 'Isy = {:5.2f}uA'.format(Isy) 
 ax.loglog(I_c__vec*1e6,w_sy*1e6, '-', color = colors['red3'], label = 'w_sy') # , label = 'Isy = {:5.2f}uA'.format(Isy) 
