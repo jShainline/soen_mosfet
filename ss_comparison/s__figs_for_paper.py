@@ -88,9 +88,9 @@ A_f250 = (3*np.sqrt(3)/2)*r_f250**2#for hexagonal packing
 N_f125 = A_4/A_f125
 N_f250 = A_4/A_f250
 
-#%% initial random graph as point of reference (Erdos-Renyi APL)
+#%% initial random graph as point of reference (Erdos-Renyi APL) (Average path length in random networks, PRE, 2004, Fronczak)
 
-NVec = np.logspace(3,8,1000)
+NVec = np.logspace(3,4,1000)
 APL_vec = [2,3,4,5] # vector of average path lengths to consider
 kExpectation_vec = [10,100,1000,10000]
 
@@ -120,6 +120,25 @@ ax.set_xlim([NVec[0],NVec[-1]])
 # ax[1].set_ylim([1,2e5])
 # plt.subplots_adjust(wspace=0, hspace=0)
 
+plt.tight_layout()
+plt.show()
+
+tn = 1.1*8.6/2.54
+fig, ax = plt.subplots(nrows = 1, ncols = 1, sharex = True, sharey = False, figsize = (tn,tn/1.618))
+# fig.suptitle('Erdos-Renyi random graph')
+
+color_list = ['blue3','red3','green3','yellow3']
+
+for ii in range(len(APL_vec)):
+    ax.loglog(NVec,NVec[:]*kExpectation_mat[:,ii], '-', color = colors[color_list[ii]], label = 'APL = {:d}'.format(APL_vec[ii]))
+ax.set_ylabel(r'Total Synapses, $N_{tot} * \bar{k}$')
+ax.set_xlabel(r'Total Nodes, $N_{tot}$')
+ax.tick_params(axis = 'both')
+ax.grid(which = 'both', axis = 'both')
+ax.set_xlim([NVec[0],NVec[-1]])
+# ax[1].set_ylim([1,2e5])
+# plt.subplots_adjust(wspace=0, hspace=0)
+ax.legend()
 plt.tight_layout()
 plt.show()
 
